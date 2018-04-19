@@ -353,7 +353,7 @@ Linker script and memory map
 
                 0x20020000                _eram = 0x20020000
 
-.text           0x08000000     0x1364
+.text           0x08000000     0x1370
  *(.isr_vector)
  .isr_vector    0x08000000      0x188 ..\obj\startup_stm32f4xx.o
                 0x08000000                g_pfnVectors
@@ -453,104 +453,104 @@ Linker script and memory map
                 0x080001e4                I2C1_ER_IRQHandler
                 0x080001e4                DMA2_Stream6_IRQHandler
                 0x080001e4                DMA1_Stream3_IRQHandler
- .text.main     0x080001ec       0x4c ..\obj\main.o
+ .text.main     0x080001ec       0x58 ..\obj\main.o
                 0x080001ec                main
  .text.RCC_AHB1PeriphClockCmd
-                0x08000238       0x3c ..\obj\stm32f4xx_rcc.o
-                0x08000238                RCC_AHB1PeriphClockCmd
+                0x08000244       0x3c ..\obj\stm32f4xx_rcc.o
+                0x08000244                RCC_AHB1PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x08000274       0x3c ..\obj\stm32f4xx_rcc.o
-                0x08000274                RCC_APB1PeriphClockCmd
+                0x08000280       0x3c ..\obj\stm32f4xx_rcc.o
+                0x08000280                RCC_APB1PeriphClockCmd
  .text.RCC_APB2PeriphClockCmd
-                0x080002b0       0x3c ..\obj\stm32f4xx_rcc.o
-                0x080002b0                RCC_APB2PeriphClockCmd
+                0x080002bc       0x3c ..\obj\stm32f4xx_rcc.o
+                0x080002bc                RCC_APB2PeriphClockCmd
  .text.GPIO_Init
-                0x080002ec      0x11c ..\obj\stm32f4xx_gpio.o
-                0x080002ec                GPIO_Init
+                0x080002f8      0x11c ..\obj\stm32f4xx_gpio.o
+                0x080002f8                GPIO_Init
  .text.GPIO_PinAFConfig
-                0x08000408       0x8c ..\obj\stm32f4xx_gpio.o
-                0x08000408                GPIO_PinAFConfig
+                0x08000414       0x8c ..\obj\stm32f4xx_gpio.o
+                0x08000414                GPIO_PinAFConfig
  .text.SystemInit
-                0x08000494       0x58 ..\obj\system_stm32f4xx.o
-                0x08000494                SystemInit
+                0x080004a0       0x58 ..\obj\system_stm32f4xx.o
+                0x080004a0                SystemInit
  .text.SetSysClock
-                0x080004ec       0xf4 ..\obj\system_stm32f4xx.o
+                0x080004f8       0xf4 ..\obj\system_stm32f4xx.o
  .text.DMA_DeInit
-                0x080005e0      0x1a4 ..\obj\stm32f4xx_dma.o
-                0x080005e0                DMA_DeInit
+                0x080005ec      0x1a4 ..\obj\stm32f4xx_dma.o
+                0x080005ec                DMA_DeInit
  .text.DMA_Init
-                0x08000784       0xac ..\obj\stm32f4xx_dma.o
-                0x08000784                DMA_Init
- .text.DMA_Cmd  0x08000830       0x38 ..\obj\stm32f4xx_dma.o
-                0x08000830                DMA_Cmd
+                0x08000790       0xac ..\obj\stm32f4xx_dma.o
+                0x08000790                DMA_Init
+ .text.DMA_Cmd  0x0800083c       0x38 ..\obj\stm32f4xx_dma.o
+                0x0800083c                DMA_Cmd
  .text.DMA_ITConfig
-                0x08000868       0x74 ..\obj\stm32f4xx_dma.o
-                0x08000868                DMA_ITConfig
+                0x08000874       0x74 ..\obj\stm32f4xx_dma.o
+                0x08000874                DMA_ITConfig
  .text.DMA_GetITStatus
-                0x080008dc       0xb0 ..\obj\stm32f4xx_dma.o
-                0x080008dc                DMA_GetITStatus
+                0x080008e8       0xb0 ..\obj\stm32f4xx_dma.o
+                0x080008e8                DMA_GetITStatus
  .text.DMA_ClearITPendingBit
-                0x0800098c       0x5c ..\obj\stm32f4xx_dma.o
-                0x0800098c                DMA_ClearITPendingBit
+                0x08000998       0x5c ..\obj\stm32f4xx_dma.o
+                0x08000998                DMA_ClearITPendingBit
  .text.UB_VGA_Screen_Init
-                0x080009e8       0x80 ..\obj\stm32_ub_vga_screen.o
-                0x080009e8                UB_VGA_Screen_Init
+                0x080009f4       0x80 ..\obj\stm32_ub_vga_screen.o
+                0x080009f4                UB_VGA_Screen_Init
  .text.UB_VGA_FillScreen
-                0x08000a68       0x48 ..\obj\stm32_ub_vga_screen.o
-                0x08000a68                UB_VGA_FillScreen
+                0x08000a74       0x48 ..\obj\stm32_ub_vga_screen.o
+                0x08000a74                UB_VGA_FillScreen
  .text.UB_VGA_SetPixel
-                0x08000ab0       0x4c ..\obj\stm32_ub_vga_screen.o
-                0x08000ab0                UB_VGA_SetPixel
+                0x08000abc       0x4c ..\obj\stm32_ub_vga_screen.o
+                0x08000abc                UB_VGA_SetPixel
  .text.P_VGA_InitIO
-                0x08000afc       0xa8 ..\obj\stm32_ub_vga_screen.o
-                0x08000afc                P_VGA_InitIO
+                0x08000b08       0xa8 ..\obj\stm32_ub_vga_screen.o
+                0x08000b08                P_VGA_InitIO
  .text.P_VGA_InitTIM
-                0x08000ba4       0xc8 ..\obj\stm32_ub_vga_screen.o
-                0x08000ba4                P_VGA_InitTIM
+                0x08000bb0       0xc8 ..\obj\stm32_ub_vga_screen.o
+                0x08000bb0                P_VGA_InitTIM
  .text.P_VGA_InitINT
-                0x08000c6c       0x58 ..\obj\stm32_ub_vga_screen.o
-                0x08000c6c                P_VGA_InitINT
+                0x08000c78       0x58 ..\obj\stm32_ub_vga_screen.o
+                0x08000c78                P_VGA_InitINT
  .text.P_VGA_InitDMA
-                0x08000cc4       0x90 ..\obj\stm32_ub_vga_screen.o
-                0x08000cc4                P_VGA_InitDMA
+                0x08000cd0       0x90 ..\obj\stm32_ub_vga_screen.o
+                0x08000cd0                P_VGA_InitDMA
  .text.TIM2_IRQHandler
-                0x08000d54       0xb8 ..\obj\stm32_ub_vga_screen.o
-                0x08000d54                TIM2_IRQHandler
+                0x08000d60       0xb8 ..\obj\stm32_ub_vga_screen.o
+                0x08000d60                TIM2_IRQHandler
  .text.DMA2_Stream5_IRQHandler
-                0x08000e0c       0x4c ..\obj\stm32_ub_vga_screen.o
-                0x08000e0c                DMA2_Stream5_IRQHandler
+                0x08000e18       0x4c ..\obj\stm32_ub_vga_screen.o
+                0x08000e18                DMA2_Stream5_IRQHandler
  .text.NVIC_Init
-                0x08000e58       0xbc ..\obj\misc.o
-                0x08000e58                NVIC_Init
+                0x08000e64       0xbc ..\obj\misc.o
+                0x08000e64                NVIC_Init
  .text.TIM_TimeBaseInit
-                0x08000f14       0xd4 ..\obj\stm32f4xx_tim.o
-                0x08000f14                TIM_TimeBaseInit
+                0x08000f20       0xd4 ..\obj\stm32f4xx_tim.o
+                0x08000f20                TIM_TimeBaseInit
  .text.TIM_ARRPreloadConfig
-                0x08000fe8       0x40 ..\obj\stm32f4xx_tim.o
-                0x08000fe8                TIM_ARRPreloadConfig
- .text.TIM_Cmd  0x08001028       0x40 ..\obj\stm32f4xx_tim.o
-                0x08001028                TIM_Cmd
+                0x08000ff4       0x40 ..\obj\stm32f4xx_tim.o
+                0x08000ff4                TIM_ARRPreloadConfig
+ .text.TIM_Cmd  0x08001034       0x40 ..\obj\stm32f4xx_tim.o
+                0x08001034                TIM_Cmd
  .text.TIM_OC3Init
-                0x08001068      0x10c ..\obj\stm32f4xx_tim.o
-                0x08001068                TIM_OC3Init
+                0x08001074      0x10c ..\obj\stm32f4xx_tim.o
+                0x08001074                TIM_OC3Init
  .text.TIM_OC4Init
-                0x08001174       0xcc ..\obj\stm32f4xx_tim.o
-                0x08001174                TIM_OC4Init
+                0x08001180       0xcc ..\obj\stm32f4xx_tim.o
+                0x08001180                TIM_OC4Init
  .text.TIM_OC3PreloadConfig
-                0x08001240       0x38 ..\obj\stm32f4xx_tim.o
-                0x08001240                TIM_OC3PreloadConfig
+                0x0800124c       0x38 ..\obj\stm32f4xx_tim.o
+                0x0800124c                TIM_OC3PreloadConfig
  .text.TIM_OC4PreloadConfig
-                0x08001278       0x3c ..\obj\stm32f4xx_tim.o
-                0x08001278                TIM_OC4PreloadConfig
+                0x08001284       0x3c ..\obj\stm32f4xx_tim.o
+                0x08001284                TIM_OC4PreloadConfig
  .text.TIM_ITConfig
-                0x080012b4       0x48 ..\obj\stm32f4xx_tim.o
-                0x080012b4                TIM_ITConfig
+                0x080012c0       0x48 ..\obj\stm32f4xx_tim.o
+                0x080012c0                TIM_ITConfig
  .text.TIM_ClearITPendingBit
-                0x080012fc       0x20 ..\obj\stm32f4xx_tim.o
-                0x080012fc                TIM_ClearITPendingBit
+                0x08001308       0x20 ..\obj\stm32f4xx_tim.o
+                0x08001308                TIM_ClearITPendingBit
  .text.TIM_DMACmd
-                0x0800131c       0x48 ..\obj\stm32f4xx_tim.o
-                0x0800131c                TIM_DMACmd
+                0x08001328       0x48 ..\obj\stm32f4xx_tim.o
+                0x08001328                TIM_DMACmd
  *(.init)
  *(.fini)
  *crtbegin.o(.ctors)
@@ -566,35 +566,35 @@ Linker script and memory map
  *(.rodata*)
  *(.eh_fram e*)
 
-.glue_7         0x08001364        0x0
+.glue_7         0x08001370        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x08001364        0x0
+.glue_7t        0x08001370        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x08001364        0x0
+.vfp11_veneer   0x08001370        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08001364        0x0
+.v4_bx          0x08001370        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08001364        0x0
+.iplt           0x08001370        0x0
  .iplt          0x00000000        0x0 ..\obj\startup_stm32f4xx.o
 
-.rel.dyn        0x08001364        0x0
+.rel.dyn        0x08001370        0x0
  .rel.iplt      0x00000000        0x0 ..\obj\startup_stm32f4xx.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08001364                __exidx_start = .
+                0x08001370                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x08001364                __exidx_end = .
-                0x08001364                __etext = .
-                0x08001364                _sidata = __etext
+                0x08001370                __exidx_end = .
+                0x08001370                __etext = .
+                0x08001370                _sidata = __etext
 
-.data           0x20000000        0x0 load address 0x08001364
+.data           0x20000000        0x0 load address 0x08001370
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = __data_start__
  *(vtable)
@@ -668,27 +668,27 @@ LOAD c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm
 END GROUP
 OUTPUT(VGA_Core.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x4cc1
+.debug_info     0x00000000     0x4cef
  .debug_info    0x00000000       0xed ..\obj\startup_stm32f4xx.o
- .debug_info    0x000000ed      0x167 ..\obj\main.o
- .debug_info    0x00000254      0xc21 ..\obj\stm32f4xx_rcc.o
- .debug_info    0x00000e75      0x5d6 ..\obj\stm32f4xx_gpio.o
- .debug_info    0x0000144b      0x566 ..\obj\system_stm32f4xx.o
- .debug_info    0x000019b1      0x718 ..\obj\stm32f4xx_dma.o
- .debug_info    0x000020c9      0xaa7 ..\obj\stm32_ub_vga_screen.o
- .debug_info    0x00002b70      0x51c ..\obj\misc.o
- .debug_info    0x0000308c     0x1c35 ..\obj\stm32f4xx_tim.o
+ .debug_info    0x000000ed      0x195 ..\obj\main.o
+ .debug_info    0x00000282      0xc21 ..\obj\stm32f4xx_rcc.o
+ .debug_info    0x00000ea3      0x5d6 ..\obj\stm32f4xx_gpio.o
+ .debug_info    0x00001479      0x566 ..\obj\system_stm32f4xx.o
+ .debug_info    0x000019df      0x718 ..\obj\stm32f4xx_dma.o
+ .debug_info    0x000020f7      0xaa7 ..\obj\stm32_ub_vga_screen.o
+ .debug_info    0x00002b9e      0x51c ..\obj\misc.o
+ .debug_info    0x000030ba     0x1c35 ..\obj\stm32f4xx_tim.o
 
-.debug_abbrev   0x00000000      0xc16
+.debug_abbrev   0x00000000      0xc1f
  .debug_abbrev  0x00000000       0xb0 ..\obj\startup_stm32f4xx.o
- .debug_abbrev  0x000000b0       0xc8 ..\obj\main.o
- .debug_abbrev  0x00000178      0x1e3 ..\obj\stm32f4xx_rcc.o
- .debug_abbrev  0x0000035b      0x1a3 ..\obj\stm32f4xx_gpio.o
- .debug_abbrev  0x000004fe      0x136 ..\obj\system_stm32f4xx.o
- .debug_abbrev  0x00000634      0x155 ..\obj\stm32f4xx_dma.o
- .debug_abbrev  0x00000789      0x1c1 ..\obj\stm32_ub_vga_screen.o
- .debug_abbrev  0x0000094a      0x145 ..\obj\misc.o
- .debug_abbrev  0x00000a8f      0x187 ..\obj\stm32f4xx_tim.o
+ .debug_abbrev  0x000000b0       0xd1 ..\obj\main.o
+ .debug_abbrev  0x00000181      0x1e3 ..\obj\stm32f4xx_rcc.o
+ .debug_abbrev  0x00000364      0x1a3 ..\obj\stm32f4xx_gpio.o
+ .debug_abbrev  0x00000507      0x136 ..\obj\system_stm32f4xx.o
+ .debug_abbrev  0x0000063d      0x155 ..\obj\stm32f4xx_dma.o
+ .debug_abbrev  0x00000792      0x1c1 ..\obj\stm32_ub_vga_screen.o
+ .debug_abbrev  0x00000953      0x145 ..\obj\misc.o
+ .debug_abbrev  0x00000a98      0x187 ..\obj\stm32f4xx_tim.o
 
 .debug_aranges  0x00000000      0x6c0
  .debug_aranges
@@ -721,36 +721,36 @@ OUTPUT(VGA_Core.elf elf32-littlearm)
  .debug_ranges  0x00000318       0x30 ..\obj\misc.o
  .debug_ranges  0x00000348      0x2e8 ..\obj\stm32f4xx_tim.o
 
-.debug_line     0x00000000     0x201d
- .debug_line    0x00000000       0xb0 ..\obj\startup_stm32f4xx.o
- .debug_line    0x000000b0      0x18f ..\obj\main.o
- .debug_line    0x0000023f      0x57a ..\obj\stm32f4xx_rcc.o
- .debug_line    0x000007b9      0x31f ..\obj\stm32f4xx_gpio.o
- .debug_line    0x00000ad8      0x1a9 ..\obj\system_stm32f4xx.o
- .debug_line    0x00000c81      0x3bc ..\obj\stm32f4xx_dma.o
- .debug_line    0x0000103d      0x376 ..\obj\stm32_ub_vga_screen.o
- .debug_line    0x000013b3      0x225 ..\obj\misc.o
- .debug_line    0x000015d8      0xa45 ..\obj\stm32f4xx_tim.o
+.debug_line     0x00000000     0x1e83
+ .debug_line    0x00000000       0xa2 ..\obj\startup_stm32f4xx.o
+ .debug_line    0x000000a2      0x16f ..\obj\main.o
+ .debug_line    0x00000211      0x542 ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x00000753      0x2e7 ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x00000a3a      0x18d ..\obj\system_stm32f4xx.o
+ .debug_line    0x00000bc7      0x384 ..\obj\stm32f4xx_dma.o
+ .debug_line    0x00000f4b      0x33e ..\obj\stm32_ub_vga_screen.o
+ .debug_line    0x00001289      0x1ed ..\obj\misc.o
+ .debug_line    0x00001476      0xa0d ..\obj\stm32f4xx_tim.o
 
-.debug_str      0x00000000     0x24cc
- .debug_str     0x00000000      0x144 ..\obj\startup_stm32f4xx.o
-                                0x156 (size before relaxing)
- .debug_str     0x00000144       0xfb ..\obj\main.o
-                                0x1c8 (size before relaxing)
- .debug_str     0x0000023f      0x6c3 ..\obj\stm32f4xx_rcc.o
-                                0x835 (size before relaxing)
- .debug_str     0x00000902      0x337 ..\obj\stm32f4xx_gpio.o
-                                0x488 (size before relaxing)
- .debug_str     0x00000c39      0x127 ..\obj\system_stm32f4xx.o
-                                0x38f (size before relaxing)
- .debug_str     0x00000d60      0x3a6 ..\obj\stm32f4xx_dma.o
-                                0x531 (size before relaxing)
- .debug_str     0x00001106      0x849 ..\obj\stm32_ub_vga_screen.o
-                                0xcc2 (size before relaxing)
- .debug_str     0x0000194f      0x170 ..\obj\misc.o
-                                0x3be (size before relaxing)
- .debug_str     0x00001abf      0xa0d ..\obj\stm32f4xx_tim.o
-                                0xdb5 (size before relaxing)
+.debug_str      0x00000000     0x244e
+ .debug_str     0x00000000      0x136 ..\obj\startup_stm32f4xx.o
+                                0x148 (size before relaxing)
+ .debug_str     0x00000136       0xed ..\obj\main.o
+                                0x1ba (size before relaxing)
+ .debug_str     0x00000223      0x6b5 ..\obj\stm32f4xx_rcc.o
+                                0x827 (size before relaxing)
+ .debug_str     0x000008d8      0x329 ..\obj\stm32f4xx_gpio.o
+                                0x47a (size before relaxing)
+ .debug_str     0x00000c01      0x119 ..\obj\system_stm32f4xx.o
+                                0x381 (size before relaxing)
+ .debug_str     0x00000d1a      0x398 ..\obj\stm32f4xx_dma.o
+                                0x523 (size before relaxing)
+ .debug_str     0x000010b2      0x83b ..\obj\stm32_ub_vga_screen.o
+                                0xcb4 (size before relaxing)
+ .debug_str     0x000018ed      0x162 ..\obj\misc.o
+                                0x3b0 (size before relaxing)
+ .debug_str     0x00001a4f      0x9ff ..\obj\stm32f4xx_tim.o
+                                0xda7 (size before relaxing)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 ..\obj\startup_stm32f4xx.o
