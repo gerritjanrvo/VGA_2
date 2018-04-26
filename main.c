@@ -33,6 +33,9 @@ int main(void)
 		for (j = 10; j<30;j++)
 		{
 			UB_VGA_SetPixel(i,j, VGA_COL_BLUE);
+			int b = 32;
+			int c = b^2;
+
 
 		}
 	}
