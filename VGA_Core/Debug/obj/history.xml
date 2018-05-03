@@ -1,65 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-<<<<<<< HEAD
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_lib -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_boot -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2 -I..\..\..\..\..\Users\Joost\Documents\GitHub -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\ub_lib -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_lib\include -I..\..\..\..\..\Users\Joost\Documents">
-      <target file="stm32f4xx_gpio.o" lastModified="16325b9db30">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="162dddf9096"/>
-      </target>
-      <target file="stm32_ub_vga_screen.o" lastModified="16325b9dd42">
-         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="162dddf90dc"/>
-      </target>
-      <target file="stm32f4xx_dma.o" lastModified="16325b9dc84">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="162dddf908c"/>
-      </target>
-      <target file="Draw_functions.o" lastModified="16325be3a4c">
-         <source file="..\..\..\Draw_functions.c" lastModified="16325be2b6c"/>
-      </target>
-      <target file="stm32f4xx_tim.o" lastModified="16325b9dff0">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="162dddf90aa"/>
-      </target>
-      <target file="system_stm32f4xx.o" lastModified="16325b9dbc6">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="162dddf9046"/>
-      </target>
-      <target file="startup_stm32f4xx.o" lastModified="16325b9d855">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="162dddf901e"/>
-      </target>
-      <target file="main.o" lastModified="16325bbee2f">
-         <source file="..\..\..\main.c" lastModified="16325bbeaaf"/>
-      </target>
-      <target file="stm32f4xx_rcc.o" lastModified="16325b9da72">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="162dddf90a0"/>
-      </target>
-      <target file="misc.o" lastModified="16325b9dde2">
-         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="162dddf9082"/>
-=======
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\ub_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_boot -I..\..\..\..\..\Users\Gerrit Jan\Documents -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib\include -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2">
-      <target file="stm32f4xx_gpio.o" lastModified="16301587761">
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Gerrit Jan -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\ub_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_boot -I..\..\..\..\..\Users\Gerrit Jan\Documents -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib\include -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2">
+      <target file="stm32f4xx_gpio.o" lastModified="16325d3343b">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="163014f316d"/>
       </target>
-      <target file="stm32_ub_vga_screen.o" lastModified="16301587b4e">
+      <target file="stm32_ub_vga_screen.o" lastModified="16325d3382e">
          <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="163014f3190"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="163015879f3">
+      <target file="stm32f4xx_dma.o" lastModified="16325d336d1">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="163014f316b"/>
       </target>
-      <target file="stm32f4xx_tim.o" lastModified="16301587f0c">
+      <target file="Draw_functions.o" lastModified="16325e9ea1e">
+         <source file="..\..\..\Draw_functions.c" lastModified="16325de3ae0"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="16325d33ce0">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="163014f317c"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="16301587888">
+      <target file="system_stm32f4xx.o" lastModified="16325d33564">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="163014f3140"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="16301587310">
+      <target file="startup_stm32f4xx.o" lastModified="16325d32fbe">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="163014f312d"/>
       </target>
-      <target file="main.o" lastModified="163015e1299">
-         <source file="..\..\..\main.c" lastModified="163015e01e6"/>
+      <target file="main.o" lastModified="16325d3de39">
+         <source file="..\..\..\main.c" lastModified="16325d3d74b"/>
       </target>
-      <target file="stm32f4xx_rcc.o" lastModified="16301587614">
+      <target file="stm32f4xx_rcc.o" lastModified="16325d332e5">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="163014f3177"/>
       </target>
-      <target file="misc.o" lastModified="16301587c72">
+      <target file="misc.o" lastModified="16325d3397a">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="163014f3167"/>
->>>>>>> d1b2b1ccf23c30b04f9c71cffad42827a501b22c
       </target>
    </processor>
 </history>

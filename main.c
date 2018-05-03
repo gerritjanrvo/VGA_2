@@ -18,7 +18,8 @@
 int main(void)
 {
 
-	int a = voorbeeld();
+	int a = 0;
+	a = voorbeeld();
 	//  uint32_t n;
 
 	SystemInit(); // System speed to 168MHz
@@ -35,8 +36,6 @@ int main(void)
 		for (j = 10; j<30;j++)
 		{
 			UB_VGA_SetPixel(i,j, VGA_COL_BLUE);
-			int b = 32;
-			int c = b^3;
 		}
 	}
 
