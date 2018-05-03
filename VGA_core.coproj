@@ -76,6 +76,7 @@
     <Component id="524" name="MISC" path="" type="2"/>
   </Components>
   <Files>
+    <File name="Draw_functions.c" path="Draw_functions.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="ub_lib/stm32_ub_vga_screen.c" path="ub_lib/stm32_ub_vga_screen.c" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
@@ -97,6 +98,7 @@
     <File name="cmsis_lib/source" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
+    <File name="Draw_functions.h" path="Draw_functions.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="ub_lib/stm32_ub_vga_screen.h" path="ub_lib/stm32_ub_vga_screen.h" type="1"/>
     <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>

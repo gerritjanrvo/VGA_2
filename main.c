@@ -14,9 +14,11 @@
 #include "stm32_ub_vga_screen.h"
 #include <math.h>
 
+
 int main(void)
 {
 
+	int a = voorbeeld();
 	//  uint32_t n;
 
 	SystemInit(); // System speed to 168MHz
@@ -28,15 +30,13 @@ int main(void)
 	int i;
 	int j;
 
-	for(i=10;i<20;i++)
+	for(i=a;i<(a+20);i++)
 	{
 		for (j = 10; j<30;j++)
 		{
 			UB_VGA_SetPixel(i,j, VGA_COL_BLUE);
 			int b = 32;
-			int c = b^2;
-
-
+			int c = b^3;
 		}
 	}
 
