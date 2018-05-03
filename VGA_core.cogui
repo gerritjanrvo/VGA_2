@@ -19,14 +19,31 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="2"/>
+<<<<<<< HEAD
+<part id="3"/>
+<part id="4"/>
+=======
 <part id="1"/>
+>>>>>>> 73ca9ef6e2359dfbe2b091abc8546591d997012e
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Gerrit Jan/Documents/VGA_2/main.c" title="main.c" tooltip="C:/Users/Gerrit Jan/Documents/VGA_2/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VGA_Core/main.c"/>
+<<<<<<< HEAD
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="496" selectionTopPixel="25"/>
+=======
+<<<<<<< HEAD
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="471" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_vga_screen.c" partName="stm32_ub_vga_screen.c" path="C:/Users/Joost/Documents/GitHub/VGA_2/ub_lib/stm32_ub_vga_screen.c" title="stm32_ub_vga_screen.c" tooltip="C:/Users/Joost/Documents/GitHub/VGA_2/ub_lib/stm32_ub_vga_screen.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VGA_Core/ub_lib/stm32_ub_vga_screen.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2536" selectionTopPixel="1298"/>
+=======
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="548" selectionTopPixel="25"/>
+>>>>>>> 73ca9ef6e2359dfbe2b091abc8546591d997012e
+>>>>>>> b5c23eb8f5bac1a843e6333a79f07928ba52a6fa
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Draw_functions.h" partName="Draw_functions.h" path="C:/Users/Gerrit Jan/Documents/VGA_2/Draw_functions.h" title="Draw_functions.h" tooltip="C:/Users/Gerrit Jan/Documents/VGA_2/Draw_functions.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VGA_Core/Draw_functions.h"/>
@@ -35,6 +52,10 @@
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Draw_functions.c" partName="Draw_functions.c" path="C:/Users/Gerrit Jan/Documents/VGA_2/Draw_functions.c" title="Draw_functions.c" tooltip="C:/Users/Gerrit Jan/Documents/VGA_2/Draw_functions.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VGA_Core/Draw_functions.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="45" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Draw_functions.c" partName="Draw_functions.c" path="C:/Users/Joost/Documents/GitHub/VGA_2/Draw_functions.c" title="Draw_functions.c" tooltip="C:/Users/Joost/Documents/GitHub/VGA_2/Draw_functions.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/VGA_Core/Draw_functions.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="51" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -248,13 +269,42 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/ub_lib/stm32_ub_vga_screen.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/Draw_functions.h"/>
+<<<<<<< HEAD
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/Draw_functions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/Draw_functions.c"/>
+=======
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/Draw_functions.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/cmsis_boot/startup/startup_stm32f4xx.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/cmsis_boot/system_stm32f4xx.c"/>
+<<<<<<< HEAD
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/Draw_functions.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/VGA_Core/Draw_functions.h"/>
 </editors>
 <item historyLabel="Draw_functions.h" index="2">
+=======
+>>>>>>> 73ca9ef6e2359dfbe2b091abc8546591d997012e
+</editors>
+<item historyLabel="main.c" index="0">
+<<<<<<< HEAD
+<position info="not_deleted" x="783" y="0"/>
+=======
+<position info="not_deleted" x="473" y="0"/>
+</item>
+<item historyLabel="stm32_ub_vga_screen.h" index="1">
+<position info="not_deleted" x="4428" y="0"/>
+</item>
+<item historyLabel="stm32_ub_vga_screen.c" index="2">
+<position/>
+</item>
+<item historyLabel="stm32_ub_vga_screen.h" index="1">
+<position info="not_deleted" x="4428" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="754" y="0"/>
+>>>>>>> 73ca9ef6e2359dfbe2b091abc8546591d997012e
+</item>
+<item historyLabel="Draw_functions.h" index="3">
+>>>>>>> b5c23eb8f5bac1a843e6333a79f07928ba52a6fa
 <position info="not_deleted" x="48" y="0"/>
 </item>
 <item historyLabel="Draw_functions.c" index="3">
@@ -386,8 +436,32 @@
 <item historyLabel="Draw_functions.c" index="3">
 <position/>
 </item>
+<<<<<<< HEAD
 <item historyLabel="main.c" index="0">
+=======
+<<<<<<< HEAD
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="473" y="0"/>
+=======
+<item active="true" historyLabel="main.c" index="0">
+>>>>>>> b5c23eb8f5bac1a843e6333a79f07928ba52a6fa
 <position info="not_deleted" x="548" y="0"/>
+>>>>>>> 73ca9ef6e2359dfbe2b091abc8546591d997012e
+</item>
+<item historyLabel="Draw_functions.h" index="5">
+<position info="not_deleted" x="16" y="0"/>
+</item>
+<item historyLabel="Draw_functions.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="471" y="0"/>
+</item>
+<item historyLabel="Draw_functions.c" index="6">
+<position info="not_deleted" x="51" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="0">
+<position info="not_deleted" x="471" y="0"/>
 </item>
 <item historyLabel="Draw_functions.c" index="6">
 <position info="not_deleted" x="45" y="0"/>
