@@ -1,15 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\ub_lib /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_boot /I..\..\..\..\..\Users\Gerrit Jan\Documents /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib\include /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2">
-      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="163014f3193">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
-         <include file="..\..\..\cmsis_lib\include\misc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
-      </source>
-   </includePath>
    <includePath signature="/I..\..\..\..\..\Users\Gerrit Jan /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\ub_lib /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_boot /I..\..\..\..\..\Users\Gerrit Jan\Documents /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib\include /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2">
       <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="163014f3193">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
@@ -81,16 +71,31 @@
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="163014f3177">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
+      <source file="..\..\..\Draw_functions.h" lastModified="16325dc74d0">
+      </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="163014f312d">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="163014f316d">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
+      <source file="..\..\..\Draw_functions.c" lastModified="16325de3ae0">
+         <include file="..\..\..\Draw_functions.h"/>
+      </source>
       <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="163014f3500">
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="163014f3158">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\ub_lib /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_boot /I..\..\..\..\..\Users\Gerrit Jan\Documents /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib\include /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis /I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2">
+      <source file="..\..\..\ub_lib\stm32_ub_vga_screen.h" lastModified="163014f3193">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
       </source>
    </includePath>
 </dependencies>
