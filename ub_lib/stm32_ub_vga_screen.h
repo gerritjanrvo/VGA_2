@@ -103,7 +103,7 @@ uint8_t VGA_RAM1[(VGA_DISPLAY_X+1)*VGA_DISPLAY_Y];
 // 1TIC      = 31,76us
 //--------------------------------------------------------------
 #define  VGA_VSYNC_PERIODE        525
-#define  VGA_VSYNC_IMP  			2
+#define  VGA_VSYNC_IMP  2
 #define  VGA_VSYNC_BILD_START      36
 #define  VGA_VSYNC_BILD_STOP      514   // (16,38ms)
 
