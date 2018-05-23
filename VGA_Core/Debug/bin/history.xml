@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=VGA_Core.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\VGA_Core -TC:\CooCox\CoIDE\configuration\ProgramData\VGA_Core/arm-gcc-link.ld -g -L..\..\.. -lm">
-      <target file="VGA_Core.elf" lastModified="1638caf05b3">
+      <target file="VGA_Core.elf" lastModified="1638d7fd9f2">
          <source file="..\obj\front_Layer.o" lastModified="1638caef647"/>
          <source file="..\obj\stm32f4xx_usart.o" lastModified="1638caef787"/>
          <source file="..\obj\uart.o" lastModified="1638caef8a4"/>
@@ -15,7 +15,7 @@
          <source file="..\obj\stm32_ub_vga_screen.o" lastModified="1638caeff32"/>
          <source file="..\obj\misc.o" lastModified="1638caeffd2"/>
          <source file="..\obj\stm32f4xx_tim.o" lastModified="1638caf01d6"/>
-         <source file="..\obj\logic_Layer.o" lastModified="1638caf032a"/>
+         <source file="..\obj\logic_Layer.o" lastModified="1638d7fd78f"/>
       </target>
    </processor>
 </history>
