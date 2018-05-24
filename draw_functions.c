@@ -664,22 +664,22 @@ void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 
 			switch(nummer){
 
-			case 1 :
+			case 0 :
 				UB_VGA_SetPixel(x+x_lo, y+y_lo+10, bitmap_1[y][x]);
 				break;
-			case 2 :
+			case 1 :
 				UB_VGA_SetPixel(x+x_lo, y+y_lo+10, bitmap_2[y][x]);
 				break;
-			case 3:
+			case 2:
 				UB_VGA_SetPixel(x+x_lo, y+y_lo+10, bitmap_3[y][x]);
 				break;
-			case 4:
+			case 3:
 				UB_VGA_SetPixel(x+x_lo, y+y_lo+10, bitmap_4[y][x]);
 				break;
-			case 5:
+			case 4:
 				UB_VGA_SetPixel(x+x_lo, y+y_lo+10, bitmap_5[y][x]);
 				break;
-			case 6:
+			case 5:
 				UB_VGA_SetPixel(x+x_lo, y+y_lo+10, bitmap_6[y][x]);
 				break;
 			default :
