@@ -2,10 +2,6 @@
 #include "stm32_ub_vga_screen.h"
 #include "draw_functions.h"
 
-
-
-
-
 void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *chardikte, int kleur)
 {
 	int x1 = atoi(charx1);
@@ -13,7 +9,6 @@ void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *cha
 	int x2 = atoi(charx2);
 	int y2 = atoi(chary2);
 	int dikte = atoi(chardikte);
-	//int kleur = atoi(charkleur);
 
 	int a, b;
 	int steep = 0;
@@ -68,7 +63,6 @@ void maak_ellips(char *charx_mp, char *chary_mp, char *charradius_x, char *charr
 	int y_mp = atoi(chary_mp);
 	int radius_x = atoi(charradius_x);
 	int radius_y = atoi(charradius_y);
-	//int kleur = atoi(charkleur);
 
 	int y, x;
 
@@ -89,7 +83,6 @@ void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, 
 	int ylo = atoi(charylo);
 	int xrb = atoi(charxrb);
 	int yrb = atoi(charyrb);
-//	int kleur = atoi(charkleur);
 
 	int i;
 	int j;
@@ -111,7 +104,6 @@ void maak_driehoek (char *charx0, char *chary0, char *charx1, char *chary1, char
 	int y1 = atoi(chary1);
 	int x2 = atoi(charx2);
 	int y2 = atoi(chary2);
-	//int kleur = atoi(charkleur);
 
 	maak_lijndriehoek(x0,y0,x1,y1,1,kleur);
 	maak_lijndriehoek(x1,y1,x2,y2,1,kleur);
@@ -172,15 +164,12 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 {
 	int x = atoi(charx);
 	int y = atoi(chary);
-	//int kleur = atoi(charkleur);
 	char tekst[40];
 	char fontnaam[40];
 	char stijl[40];
 
 	for (int i=0;i<40;i++){
 		tekst[i]=chartekst[i];
-		//fontnaam[i]=charfontnaam[i];
-		//stijl[i]=charstijl[i];
 	}
 
 		int bitmap_A[10][10] = {
@@ -691,9 +680,6 @@ void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 
 void maak_clearscherm (int kleur)
 {
-	UART_puts("\n hallo: ");
-	UART_puts(kleur);
-	//int intkleur = atoi(kleur);
 	UB_VGA_FillScreen(kleur);
 }
 
@@ -701,7 +687,6 @@ void wacht (int msecs)
 {
 	uint32_t G_CLK;
 	uint32_t D_mS; // Global variable (ms)
-
 
 	RCC_ClocksTypeDef Clocks;
 	RCC_GetClocksFreq(&Clocks);
@@ -716,5 +701,4 @@ void wacht (int msecs)
         for(i=0;i<D_mS;i++);
         msecs--;
     }
-
 }
