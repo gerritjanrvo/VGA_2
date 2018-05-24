@@ -12,7 +12,12 @@
 //--------------------------------------------------------------
 #include "stm32f4xx.h"
 
+#include "stdlib.h"
+#include "stddef.h"
+#include "uart.h"
+#include "front_Layer.h"
 
+char arg1[100];
 
 //--------------------------------------------------------------
 #endif // __STM32F4_UB_MAIN_H
