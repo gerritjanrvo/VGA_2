@@ -27,7 +27,7 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
       </source>
-      <source file="..\..\..\logic_Layer.c" lastModified="1638d86f541">
+      <source file="..\..\..\logic_Layer.c" lastModified="1638e218aff">
          <include file="..\..\..\main.h"/>
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
@@ -35,6 +35,10 @@
          <include file="..\..\..\logic_Layer.h"/>
          <include file="..\..\..\IO_Layer.h"/>
          <include file="..\..\..\logic_Layer.h"/>
+      </source>
+      <source file="..\..\..\draw_functions.c" lastModified="1638e3f621d">
+         <include file="..\..\..\front_Layer.h"/>
+         <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="152a1cbad50">
       </source>
@@ -82,10 +86,10 @@
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="152a1cbad50">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="163688ef4ad">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="163688ef4ad">
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="152a1cbad50">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="152a1cbad50">
@@ -103,7 +107,7 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
       </source>
-      <source file="..\..\..\main.c" lastModified="1638c336f0f">
+      <source file="..\..\..\main.c" lastModified="1638e10fa71">
          <include file="..\..\..\main.h"/>
          <include file="..\..\..\ub_lib\stm32_ub_vga_screen.h"/>
       </source>

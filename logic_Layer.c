@@ -32,6 +32,7 @@ void string_Splitten (char* input)
 		handleArgument(i++, token);
 	  }
 	handleFirstArgument();
+
 }
 
 void handleArgument(int nr, char *arg)
@@ -98,31 +99,29 @@ void handleArgument(int nr, char *arg)
  }
 
 void handleFirstArgument(){
-	UART_puts("\n in handleFirstArgument: ");
-	UART_puts(dataArg.data1);
 	if(strcmp(dataArg.data1, "lijn")== 0) { UART_puts("\n Hij heeft lijn");
-		maak_lijn ();
+		maak_lijn (&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6, &dataArg.data7);
 	}
 	else if(strcmp(dataArg.data1, "ellips")== 0){UART_puts("\n Hij heeft ellips");
-		maak_ellips();
+		maak_ellips(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6);
 	}
 	if(strcmp(dataArg.data1, "rechthoek")== 0) { UART_puts("\n Hij heeft rechthoek");
-		maak_rechthoek();
+		maak_rechthoek(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6);
 	}
 	else if(strcmp(dataArg.data1, "driehoek")== 0){ UART_puts("\n Hij heeft driehoek");
-		maak_driehoek();
+		maak_driehoek(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6, &dataArg.data7, &dataArg.data8);
 	}
 	if(strcmp(dataArg.data1, "tekst")== 0) { UART_puts("\n Hij heeft tekst");
-		maak_tekst();
+		maak_tekst(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6, &dataArg.data7);
 	}
 	else if(strcmp(dataArg.data1, "bitmap")== 0){ UART_puts("\n Hij heeft bitmap");
-		maak_bitmap();
+		maak_bitmap(&dataArg.data2, &dataArg.data3, &dataArg.data4);
 	}
 	if(strcmp(dataArg.data1, "clearscherm")== 0) { UART_puts("\n Hij heeft clearscherm");
-		maak_clearscherm();
+		maak_clearscherm(&dataArg.data2);
 	}
 	else if(strcmp(dataArg.data1, "wacht")== 0) { UART_puts("\n Hij heeft wacht");
-		wacht();
+		wacht(&dataArg.data2);
 	}
 }
 
