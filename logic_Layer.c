@@ -9,7 +9,7 @@ struct dataStruct
 	char data1[20];
 	char data2[20];
 	char data3[20];
-	char data4[20]; // vanwege max tekst lengte
+	char data4[40]; // vanwege max tekst lengte
 	char data5[20];
 	char data6[20];
 	char data7[20];
@@ -98,27 +98,81 @@ void handleArgument(int nr, char *arg)
 		}
  }
 
+int handleKleur(char *datakleur){
+	if(strcmp(datakleur, "zwart")== 0) { UART_puts("\n Zwart ");
+		return(0);
+	}
+	else if(strcmp(datakleur, "blauw")== 0){UART_puts("\n blauw ");
+		return(3);
+	}
+	if(strcmp(datakleur, "lichtblauw")== 0) { UART_puts("\n lichtblauw ");
+		return(111);
+	}
+	else if(strcmp(datakleur, "groen")== 0){ UART_puts("\n groen ");
+		return(28);
+	}
+	if(strcmp(datakleur, "lichtgroen")== 0) { UART_puts("\n lichtgroen");
+		return(125);
+	}
+	else if(strcmp(datakleur, "cyaan")== 0){ UART_puts("\n cyaan ");
+		return(31);
+	}
+	if(strcmp(datakleur, "lichtcyaan")== 0) { UART_puts("\n lichtcyaan ");
+		return(127);
+	}
+	else if(strcmp(datakleur, "rood")== 0) { UART_puts("\n rood ");
+		return(224);
+	}
+	if(strcmp(datakleur, "lichtrood")== 0) { UART_puts("\n lichtrood ");
+		return(237);
+	}
+	else if(strcmp(datakleur, "magenta")== 0) { UART_puts("\n magenta ");
+		return(227);
+	}
+	if(strcmp(datakleur, "lichtmagenta")== 0) { UART_puts("\n lichtmagenta ");
+		return(239);
+	}
+	else if(strcmp(datakleur, "geel")== 0) { UART_puts("\n geel ");
+		return(252);
+	}
+	if(strcmp(datakleur, "bruin")== 0) { UART_puts("\n bruin ");
+		return(68);
+	}
+	else if(strcmp(datakleur, "grijs")== 0) { UART_puts("\n grijs ");
+		return(110);
+	}
+	if(strcmp(datakleur, "wit")== 0) { UART_puts("\n wit ");
+		return(255);
+		}
+}
+
 void handleFirstArgument(){
 	if(strcmp(dataArg.data1, "lijn")== 0) { UART_puts("\n Hij heeft lijn");
-		maak_lijn (&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6, &dataArg.data7);
+		int kleurcode = handleKleur(&dataArg.data7);
+		maak_lijn (&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6, kleurcode);
 	}
 	else if(strcmp(dataArg.data1, "ellips")== 0){UART_puts("\n Hij heeft ellips");
-		maak_ellips(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6);
+		int kleurcode = handleKleur(&dataArg.data6);
+		maak_ellips(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, kleurcode);
 	}
 	if(strcmp(dataArg.data1, "rechthoek")== 0) { UART_puts("\n Hij heeft rechthoek");
-		maak_rechthoek(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6);
+		int kleurcode = handleKleur(&dataArg.data6);
+		maak_rechthoek(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, kleurcode);
 	}
 	else if(strcmp(dataArg.data1, "driehoek")== 0){ UART_puts("\n Hij heeft driehoek");
-		maak_driehoek(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6, &dataArg.data7, &dataArg.data8);
+		int kleurcode = handleKleur(&dataArg.data8);
+		maak_driehoek(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6, &dataArg.data7, kleurcode);
 	}
 	if(strcmp(dataArg.data1, "tekst")== 0) { UART_puts("\n Hij heeft tekst");
-		maak_tekst(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, &dataArg.data6, &dataArg.data7);
+		int kleurcode = handleKleur(&dataArg.data6);
+		maak_tekst(&dataArg.data2, &dataArg.data3, &dataArg.data4, &dataArg.data5, kleurcode, &dataArg.data7);
 	}
 	else if(strcmp(dataArg.data1, "bitmap")== 0){ UART_puts("\n Hij heeft bitmap");
 		maak_bitmap(&dataArg.data2, &dataArg.data3, &dataArg.data4);
 	}
 	if(strcmp(dataArg.data1, "clearscherm")== 0) { UART_puts("\n Hij heeft clearscherm");
-		maak_clearscherm(&dataArg.data2);
+		int kleurcode = handleKleur(&dataArg.data2);
+		maak_clearscherm(kleurcode);
 	}
 	else if(strcmp(dataArg.data1, "wacht")== 0) { UART_puts("\n Hij heeft wacht");
 		wacht(&dataArg.data2);
