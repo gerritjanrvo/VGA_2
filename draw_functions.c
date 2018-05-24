@@ -89,7 +89,20 @@ void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, 
 	int ylo = atoi(charylo);
 	int xrb = atoi(charxrb);
 	int yrb = atoi(charyrb);
-//	int kleur = atoi(charkleur);
+
+	if(yrb > ylo)
+	{
+		int switchy = yrb;
+		yrb = ylo;
+		ylo = switchy;
+	}
+
+	if(xrb < xlo)
+	{
+		int switchx = xrb;
+		xrb = xlo;
+		xlo = switchx;
+	}
 
 	int i;
 	int j;
@@ -172,15 +185,13 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 {
 	int x = atoi(charx);
 	int y = atoi(chary);
-	//int kleur = atoi(charkleur);
-	char tekst[40];
-	char fontnaam[40];
-	char stijl[40];
+	int x1 = x;
+	char tekst[45];
 
-	for (int i=0;i<40;i++){
+	int i;
+
+	for (i=0;i<45;i++){
 		tekst[i]=chartekst[i];
-		//fontnaam[i]=charfontnaam[i];
-		//stijl[i]=charstijl[i];
 	}
 
 		int bitmap_A[10][10] = {
@@ -522,12 +533,20 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 
 	char h = 0;
 	int length = 0;
-	int v,w,i;
+	int v,w,f;
 	length = (strlen(tekst));
 
-	for(i=0; i<length; i++, x=x+10)
+
+
+	for(f=0; f<length; f++, x=x+10)
 	{
-		h = tekst[i];
+		if(x > 310)
+				{
+					x = x1;
+					y = y + 10;
+				}
+
+		h = tekst[f];
 		for(w=0; w < 10; w++){
 			for(v=0; v < 10;v++){
 
@@ -691,9 +710,6 @@ void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 
 void maak_clearscherm (int kleur)
 {
-	UART_puts("\n hallo: ");
-	UART_puts(kleur);
-	//int intkleur = atoi(kleur);
 	UB_VGA_FillScreen(kleur);
 }
 
