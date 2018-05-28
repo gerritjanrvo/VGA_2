@@ -2,6 +2,13 @@
 #include "stm32_ub_vga_screen.h"
 #include "draw_functions.h"
 
+/**
+ *
+ * @param
+ * 		empty
+ * 		@brief \n Maak lijn
+ */
+
 void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *chardikte, int kleur)
 {
 	int x1 = atoi(charx1);
