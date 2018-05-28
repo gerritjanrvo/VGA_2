@@ -10,6 +10,13 @@
 // Function : VGA_core DMA LIB 320x240, 8bit color
 //--------------------------------------------------------------
 
+/*
+ * @mainpage
+ * 	\n VGA programma
+ * 	\n Joost Kouijzer & Gerrit Jan Rijken van Olst
+ *
+ */
+
 #include "main.h"
 #include "stm32_ub_vga_screen.h"
 #include <math.h>
