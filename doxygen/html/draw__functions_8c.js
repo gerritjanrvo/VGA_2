@@ -8,5 +8,5 @@ var draw__functions_8c =
     [ "maak_lijndriehoek", "draw__functions_8c.html#a03049c88edb3e5aa9d3473e75c3d1d41", null ],
     [ "maak_rechthoek", "draw__functions_8c.html#a3e838cb42e553ffb6e59967d897b223d", null ],
     [ "maak_tekst", "draw__functions_8c.html#ae4790155ab2d35f31c845848c8042757", null ],
-    [ "wacht", "draw__functions_8c.html#a83755e0ad8b8d746fff820ffde50262c", null ]
+    [ "wacht", "draw__functions_8c.html#a209bb069944d45693b7f8bc428ecdc1a", null ]
 ];

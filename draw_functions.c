@@ -1,16 +1,9 @@
 
-
-
-
 #include "draw_functions.h"
 
 /**
- *
- * @param
- * 		empty
- * 		@brief \n Maak lijn
+ * 		@brief \n Functie waarmee de lijn wordt getekend
  */
-
 void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *chardikte, int kleur)
 {
 	int x1 = atoi(charx1);
@@ -66,6 +59,9 @@ void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *cha
 	}
 }
 
+/**
+ * 		@brief \n Functie waarmee de ellips wordt getekend
+ */
 void maak_ellips(char *charx_mp, char *chary_mp, char *charradius_x, char *charradius_y, int kleur)
 {
 	int x_mp = atoi(charx_mp);
@@ -86,6 +82,9 @@ void maak_ellips(char *charx_mp, char *chary_mp, char *charradius_x, char *charr
 	}
 }
 
+/**
+ * 		@brief \n Functie waarmee de rechthoek wordt getekend
+ */
 void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, int kleur)
 {
 	int xlo = atoi(charxlo);
@@ -120,6 +119,9 @@ void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, 
 	}
 }
 
+/**
+ * 		@brief \n Functie waarmee de driehoek wordt getekend
+ */
 void maak_driehoek (char *charx0, char *chary0, char *charx1, char *chary1, char *charx2, char *chary2, int kleur)
 {
 
@@ -135,6 +137,9 @@ void maak_driehoek (char *charx0, char *chary0, char *charx1, char *chary1, char
 	maak_lijndriehoek(x2,y2,x0,y0,1,kleur);
 }
 
+/**
+ * 		@brief \n Functie waarmee de lijnen van de driehoek worden getekend
+ */
 void maak_lijndriehoek(int x1, int y1, int x2, int y2, int dikte, int kleur)
 {
 	int a, b;
@@ -184,7 +189,9 @@ void maak_lijndriehoek(int x1, int y1, int x2, int y2, int dikte, int kleur)
 	}
 }
 
-
+/**
+ * 		@brief \n Functie waarmee de tekst wordt getekend
+ */
 void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , int kleur, char *charstijl)
 {
 	int x = atoi(charx);
@@ -251,13 +258,18 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 	}
 }
 
+/**
+ * 		@brief \n Functie waarmee de bitmap wordt getekend.
+ */
 void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 {
 	int nummer = atoi(charnummer);
 	int x_lo = atoi(charx_lo);
 	int y_lo = atoi(chary_lo);
 
-	//pijl naar rechts
+/**
+*	\n Pijl naar rechts
+*/
 	int bitmap_1[10][10] = {
 				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF},
 				{0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0x03,0xFF,0xFF,0xFF},
@@ -271,6 +283,9 @@ void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF}
 	};
 
+	/**
+	*	\n Pijl naar boven
+	*/
 	//pijl naar boven
 	int bitmap_2[10][10] = {
 				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF},
@@ -373,11 +388,17 @@ void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 	}
 }
 
+/**
+ * 		@brief \n Functie waarmee het scherm schoon wordt gemaakt
+ */
 void maak_clearscherm (int kleur)
 {
 	UB_VGA_FillScreen(kleur);
 }
 
+/**
+ * 		@brief \n Functie waarmee er wordt gewacht
+ */
 void wacht (char *charmsecs)
 {
 	int msecs = atoi(charmsecs);
