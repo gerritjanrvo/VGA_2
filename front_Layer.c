@@ -1,7 +1,7 @@
 /*
  * front_Layer.c
  *
- * Gemaakt door: Joost Kouijzer & Gerrit-Jan Rijken van Olst
+ * Gemaakt door: Joost Kouijzer & Gerrit Jan Rijken van Olst
  */
 
 #include "front_Layer.h"
