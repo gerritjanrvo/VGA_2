@@ -8,7 +8,7 @@ struct dataStruct
 	char data1[20];
 	char data2[20];
 	char data3[20];
-	char data4[40]; // vanwege max tekst lengte
+	char data4[45]; // vanwege max tekst lengte
 	char data5[20];
 	char data6[20];
 	char data7[20];

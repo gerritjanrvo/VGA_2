@@ -83,6 +83,23 @@ void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, 
 	int ylo = atoi(charylo);
 	int xrb = atoi(charxrb);
 	int yrb = atoi(charyrb);
+<<<<<<< HEAD
+
+	if(yrb > ylo)
+	{
+		int switchy = yrb;
+		yrb = ylo;
+		ylo = switchy;
+	}
+
+	if(xrb < xlo)
+	{
+		int switchx = xrb;
+		xrb = xlo;
+		xlo = switchx;
+	}
+=======
+>>>>>>> origin/master
 
 	int i;
 	int j;
@@ -164,11 +181,18 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 {
 	int x = atoi(charx);
 	int y = atoi(chary);
+<<<<<<< HEAD
+	int x1 = x;
+	char tekst[45];
+=======
 	char tekst[40];
 	char fontnaam[40];
 	char stijl[40];
+>>>>>>> origin/master
 
-	for (int i=0;i<40;i++){
+	int i;
+
+	for (i=0;i<45;i++){
 		tekst[i]=chartekst[i];
 	}
 
@@ -511,12 +535,20 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 
 	char h = 0;
 	int length = 0;
-	int v,w,i;
+	int v,w,f;
 	length = (strlen(tekst));
 
-	for(i=0; i<length; i++, x=x+10)
+
+
+	for(f=0; f<length; f++, x=x+10)
 	{
-		h = tekst[i];
+		if(x > 310)
+				{
+					x = x1;
+					y = y + 10;
+				}
+
+		h = tekst[f];
 		for(w=0; w < 10; w++){
 			for(v=0; v < 10;v++){
 
