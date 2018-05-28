@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+
+
+void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *chardikte, int kleur);
+=======
 #ifndef __DRAW_FUNCTIONS_H
 
 #define __DRAW_FUNCTIONS_H
@@ -358,3 +363,4 @@ int bitmap_E[10][10] = {
 
 
 #endif		//__DRAW_FUNCTIONS_H
+>>>>>>> 39137961bfbf2df36a72b54eae3cf84cc9546511
