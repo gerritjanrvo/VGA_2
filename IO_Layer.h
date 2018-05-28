@@ -1,5 +1,6 @@
 #ifndef __IO_LAYER_H
 
+<<<<<<< HEAD
 #define __IO_LAYER_H
 
 #include "main.h"
@@ -13,3 +14,8 @@ void init();
 
 
 #endif // __IO_LAYER_H
+=======
+
+void init();
+
+>>>>>>> origin/master

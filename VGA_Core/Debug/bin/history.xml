@@ -1,1 +1,64 @@
+<<<<<<< HEAD
 <history/>
+=======
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=VGA_Core.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\VGA_Core -TC:\CooCox\CoIDE\configuration\ProgramData\VGA_Core/arm-gcc-link.ld -g -L..\..\.. -lm">
+<<<<<<< HEAD
+      <target file="VGA_Core.elf" lastModified="16392565514">
+         <source file="..\obj\front_Layer.o" lastModified="163923f5255"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="163923f5352"/>
+         <source file="..\obj\uart.o" lastModified="163923f5435"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="163923f54af"/>
+         <source file="..\obj\main.o" lastModified="163923f556d"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="163923f56ab"/>
+         <source file="..\obj\draw_functions.o" lastModified="163923f59d8"/>
+         <source file="..\obj\IO_Layer.o" lastModified="163923f5a8a"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="163923f5b5d"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="163923f5bec"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="163923f5cad"/>
+         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="163923f5d64"/>
+         <source file="..\obj\misc.o" lastModified="163923f5e04"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="163923f5f92"/>
+         <source file="..\obj\logic_Layer.o" lastModified="16392565115"/>
+=======
+<<<<<<< HEAD
+      <target file="VGA_Core.elf" lastModified="163923b6763">
+         <source file="..\obj\front_Layer.o" lastModified="163920bb734"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="163920bb87b"/>
+         <source file="..\obj\uart.o" lastModified="163920bba34"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="163920bbb24"/>
+         <source file="..\obj\main.o" lastModified="163920bbc7c"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="163920bbe4e"/>
+         <source file="..\obj\draw_functions.o" lastModified="163923b63a4"/>
+         <source file="..\obj\IO_Layer.o" lastModified="163920bc11c"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="163920bc27c"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="163920bc377"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="163920bc4e1"/>
+         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="163920bc648"/>
+         <source file="..\obj\misc.o" lastModified="163920bc77b"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="163920bc9e2"/>
+         <source file="..\obj\logic_Layer.o" lastModified="16392264f96"/>
+=======
+      <target file="VGA_Core.elf" lastModified="163923ab0dd">
+         <source file="..\obj\front_Layer.o" lastModified="16392386f56"/>
+         <source file="..\obj\stm32f4xx_usart.o" lastModified="1639129dc54"/>
+         <source file="..\obj\uart.o" lastModified="1639237cd42"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="1639129de48"/>
+         <source file="..\obj\main.o" lastModified="163923aae6b"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1639129dfe2"/>
+         <source file="..\obj\draw_functions.o" lastModified="1639234b23b"/>
+         <source file="..\obj\IO_Layer.o" lastModified="16392346758"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1639129e3cc"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="1639129e462"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="1639129e52a"/>
+         <source file="..\obj\stm32_ub_vga_screen.o" lastModified="1639129e5e8"/>
+         <source file="..\obj\misc.o" lastModified="1639129e69c"/>
+         <source file="..\obj\stm32f4xx_tim.o" lastModified="1639129e81c"/>
+         <source file="..\obj\logic_Layer.o" lastModified="16392373596"/>
+>>>>>>> origin/master
+>>>>>>> 538f074d2f76e9bb5ba9c4985c2d773bd5c4608e
+      </target>
+   </processor>
+</history>
+>>>>>>> origin/master

@@ -78,13 +78,20 @@ void handleArgument(int nr, char *arg)
 				UART_puts(dataArg.data8);
 				break;
 			default:
-				UART_puts("\n Te veel argumenten:");
+				UART_puts("\n Error: Te veel argumenten");
 				break;
 		}
  }
 
+<<<<<<< HEAD
 int handleKleur(char *datakleur)
 {
+=======
+/*
+ * @brief Kijk welke kleur het is en return de waarde van de kleur
+ */
+int handleKleur(char *datakleur){
+>>>>>>> origin/master
 	if(strcmp(datakleur, "zwart")== 0) {
 		return(0);
 	}
@@ -129,10 +136,15 @@ int handleKleur(char *datakleur)
 	}
 	else if(strcmp(datakleur, "wit")== 0){
 		return(255);
+<<<<<<< HEAD
 	}
 	else{
 		return (0);
 	}
+=======
+		}
+	else UART_puts("\n Error: kleur onbekend");
+>>>>>>> origin/master
 }
 
 void handleFirstArgument()
@@ -167,5 +179,6 @@ void handleFirstArgument()
 	else if(strcmp(dataArg.data1, "wacht")== 0){
 		wacht(dataArg.data2);
 	}
+	else UART_puts("\n Error: onbekent eerste argument");
 }
 

@@ -1,0 +1,102 @@
+\hypertarget{uart_8h}{}\section{uart.\+h File Reference}
+\label{uart_8h}\index{uart.\+h@{uart.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{uart_8h_a876ce77f3c672c7162658151e648389e}{CR}}~13
+\item 
+\#define \mbox{\hyperlink{uart_8h_a350c9d6cb81908d59427ee96844d1a9c}{LF}}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{uart_8h_ab60a36f7295d704926120d22f806dcd1}{U\+A\+R\+T\+\_\+init}} (void)
+\item 
+signed int \mbox{\hyperlink{uart_8h_ae79c23d66207bb2d73163f06a36ed028}{U\+A\+R\+T\+\_\+printf}} (size\+\_\+t length, const char $\ast$p\+Format,...)
+\item 
+void \mbox{\hyperlink{uart_8h_ac3ea536f44785fa10c5a92ff0d2a6298}{U\+A\+R\+T\+\_\+\+I\+N\+T\+\_\+init}} (void)
+\item 
+void \mbox{\hyperlink{uart_8h_a2e7ff00b7755b8ab070035678eb0b54d}{U\+A\+R\+T\+\_\+putchar}} (char c)
+\item 
+void \mbox{\hyperlink{uart_8h_a27087b9a5c82355d1201473c2a7dc644}{U\+A\+R\+T\+\_\+puts}} (char $\ast$s)
+\item 
+void \mbox{\hyperlink{uart_8h_a8fc12a2adee21e663b39d5d6501cfada}{U\+A\+R\+T\+\_\+putnum}} (unsigned int num, unsigned char deel)
+\item 
+void \mbox{\hyperlink{uart_8h_ab68b2265165f1a355ff3dac4a726b37d}{U\+A\+R\+T\+\_\+putint}} (unsigned int num)
+\item 
+char \mbox{\hyperlink{uart_8h_aba72ba3c665a23c4d7e25f442bc2ce3a}{U\+A\+R\+T\+\_\+get}} (void)
+\item 
+void \mbox{\hyperlink{uart_8h_ac3c92c13f9ae4998665a9ebb2868ada5}{U\+A\+R\+T\+\_\+gets}} (char $\ast$s, int echo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{uart_8h_a876ce77f3c672c7162658151e648389e}\label{uart_8h_a876ce77f3c672c7162658151e648389e}} 
+\index{uart.\+h@{uart.\+h}!CR@{CR}}
+\index{CR@{CR}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{CR}{CR}}
+{\footnotesize\ttfamily \#define CR~13}
+
+\mbox{\Hypertarget{uart_8h_a350c9d6cb81908d59427ee96844d1a9c}\label{uart_8h_a350c9d6cb81908d59427ee96844d1a9c}} 
+\index{uart.\+h@{uart.\+h}!LF@{LF}}
+\index{LF@{LF}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{LF}{LF}}
+{\footnotesize\ttfamily \#define LF~10}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{uart_8h_aba72ba3c665a23c4d7e25f442bc2ce3a}\label{uart_8h_aba72ba3c665a23c4d7e25f442bc2ce3a}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+get@{U\+A\+R\+T\+\_\+get}}
+\index{U\+A\+R\+T\+\_\+get@{U\+A\+R\+T\+\_\+get}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+get()}{UART\_get()}}
+{\footnotesize\ttfamily char U\+A\+R\+T\+\_\+get (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_ac3c92c13f9ae4998665a9ebb2868ada5}\label{uart_8h_ac3c92c13f9ae4998665a9ebb2868ada5}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+gets@{U\+A\+R\+T\+\_\+gets}}
+\index{U\+A\+R\+T\+\_\+gets@{U\+A\+R\+T\+\_\+gets}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+gets()}{UART\_gets()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+gets (\begin{DoxyParamCaption}\item[{char $\ast$}]{s,  }\item[{int}]{echo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_ab60a36f7295d704926120d22f806dcd1}\label{uart_8h_ab60a36f7295d704926120d22f806dcd1}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+init@{U\+A\+R\+T\+\_\+init}}
+\index{U\+A\+R\+T\+\_\+init@{U\+A\+R\+T\+\_\+init}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+init()}{UART\_init()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_ac3ea536f44785fa10c5a92ff0d2a6298}\label{uart_8h_ac3ea536f44785fa10c5a92ff0d2a6298}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+\+I\+N\+T\+\_\+init@{U\+A\+R\+T\+\_\+\+I\+N\+T\+\_\+init}}
+\index{U\+A\+R\+T\+\_\+\+I\+N\+T\+\_\+init@{U\+A\+R\+T\+\_\+\+I\+N\+T\+\_\+init}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+I\+N\+T\+\_\+init()}{UART\_INT\_init()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+I\+N\+T\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_ae79c23d66207bb2d73163f06a36ed028}\label{uart_8h_ae79c23d66207bb2d73163f06a36ed028}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+printf@{U\+A\+R\+T\+\_\+printf}}
+\index{U\+A\+R\+T\+\_\+printf@{U\+A\+R\+T\+\_\+printf}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+printf()}{UART\_printf()}}
+{\footnotesize\ttfamily signed int U\+A\+R\+T\+\_\+printf (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{length,  }\item[{const char $\ast$}]{p\+Format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_a2e7ff00b7755b8ab070035678eb0b54d}\label{uart_8h_a2e7ff00b7755b8ab070035678eb0b54d}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+putchar@{U\+A\+R\+T\+\_\+putchar}}
+\index{U\+A\+R\+T\+\_\+putchar@{U\+A\+R\+T\+\_\+putchar}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+putchar()}{UART\_putchar()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+putchar (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_ab68b2265165f1a355ff3dac4a726b37d}\label{uart_8h_ab68b2265165f1a355ff3dac4a726b37d}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+putint@{U\+A\+R\+T\+\_\+putint}}
+\index{U\+A\+R\+T\+\_\+putint@{U\+A\+R\+T\+\_\+putint}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+putint()}{UART\_putint()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+putint (\begin{DoxyParamCaption}\item[{unsigned int}]{num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_a8fc12a2adee21e663b39d5d6501cfada}\label{uart_8h_a8fc12a2adee21e663b39d5d6501cfada}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+putnum@{U\+A\+R\+T\+\_\+putnum}}
+\index{U\+A\+R\+T\+\_\+putnum@{U\+A\+R\+T\+\_\+putnum}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+putnum()}{UART\_putnum()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+putnum (\begin{DoxyParamCaption}\item[{unsigned int}]{num,  }\item[{unsigned char}]{deel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_a27087b9a5c82355d1201473c2a7dc644}\label{uart_8h_a27087b9a5c82355d1201473c2a7dc644}} 
+\index{uart.\+h@{uart.\+h}!U\+A\+R\+T\+\_\+puts@{U\+A\+R\+T\+\_\+puts}}
+\index{U\+A\+R\+T\+\_\+puts@{U\+A\+R\+T\+\_\+puts}!uart.\+h@{uart.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+puts()}{UART\_puts()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+puts (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+

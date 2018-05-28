@@ -1,0 +1,83 @@
+\hypertarget{draw__functions_8c}{}\section{draw\+\_\+functions.\+c File Reference}
+\label{draw__functions_8c}\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+{\ttfamily \#include \char`\"{}front\+\_\+\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32\+\_\+ub\+\_\+vga\+\_\+screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw\+\_\+functions.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{draw__functions_8c_a4ee6635b98c8c085664b5c0699b81ef4}{maak\+\_\+lijn}} (char $\ast$charx1, char $\ast$chary1, char $\ast$charx2, char $\ast$chary2, char $\ast$chardikte, int kleur)
+\item 
+void \mbox{\hyperlink{draw__functions_8c_a7f08a2d8321f298167f106a067efb8a8}{maak\+\_\+ellips}} (char $\ast$charx\+\_\+mp, char $\ast$chary\+\_\+mp, char $\ast$charradius\+\_\+x, char $\ast$charradius\+\_\+y, int kleur)
+\item 
+void \mbox{\hyperlink{draw__functions_8c_a3e838cb42e553ffb6e59967d897b223d}{maak\+\_\+rechthoek}} (char $\ast$charxlo, char $\ast$charylo, char $\ast$charxrb, char $\ast$charyrb, int kleur)
+\item 
+void \mbox{\hyperlink{draw__functions_8c_a472b5c89b317e70dd0f84c414884c20f}{maak\+\_\+driehoek}} (char $\ast$charx0, char $\ast$chary0, char $\ast$charx1, char $\ast$chary1, char $\ast$charx2, char $\ast$chary2, int kleur)
+\item 
+void \mbox{\hyperlink{draw__functions_8c_a03049c88edb3e5aa9d3473e75c3d1d41}{maak\+\_\+lijndriehoek}} (int x1, int y1, int x2, int y2, int dikte, int kleur)
+\item 
+void \mbox{\hyperlink{draw__functions_8c_ae4790155ab2d35f31c845848c8042757}{maak\+\_\+tekst}} (char $\ast$charx, char $\ast$chary, char $\ast$chartekst, char $\ast$charfontnaam, int kleur, char $\ast$charstijl)
+\item 
+void \mbox{\hyperlink{draw__functions_8c_a8850004a322a1810f9a02af035ed5f7f}{maak\+\_\+bitmap}} (char $\ast$charnummer, char $\ast$charx\+\_\+lo, char $\ast$chary\+\_\+lo)
+\item 
+void \mbox{\hyperlink{draw__functions_8c_aad9d81387b2c354c369035b0a1821973}{maak\+\_\+clearscherm}} (int kleur)
+\item 
+void \mbox{\hyperlink{draw__functions_8c_a83755e0ad8b8d746fff820ffde50262c}{wacht}} (int msecs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{draw__functions_8c_a8850004a322a1810f9a02af035ed5f7f}\label{draw__functions_8c_a8850004a322a1810f9a02af035ed5f7f}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!maak\+\_\+bitmap@{maak\+\_\+bitmap}}
+\index{maak\+\_\+bitmap@{maak\+\_\+bitmap}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{maak\+\_\+bitmap()}{maak\_bitmap()}}
+{\footnotesize\ttfamily void maak\+\_\+bitmap (\begin{DoxyParamCaption}\item[{char $\ast$}]{charnummer,  }\item[{char $\ast$}]{charx\+\_\+lo,  }\item[{char $\ast$}]{chary\+\_\+lo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw__functions_8c_aad9d81387b2c354c369035b0a1821973}\label{draw__functions_8c_aad9d81387b2c354c369035b0a1821973}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!maak\+\_\+clearscherm@{maak\+\_\+clearscherm}}
+\index{maak\+\_\+clearscherm@{maak\+\_\+clearscherm}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{maak\+\_\+clearscherm()}{maak\_clearscherm()}}
+{\footnotesize\ttfamily void maak\+\_\+clearscherm (\begin{DoxyParamCaption}\item[{int}]{kleur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw__functions_8c_a472b5c89b317e70dd0f84c414884c20f}\label{draw__functions_8c_a472b5c89b317e70dd0f84c414884c20f}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!maak\+\_\+driehoek@{maak\+\_\+driehoek}}
+\index{maak\+\_\+driehoek@{maak\+\_\+driehoek}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{maak\+\_\+driehoek()}{maak\_driehoek()}}
+{\footnotesize\ttfamily void maak\+\_\+driehoek (\begin{DoxyParamCaption}\item[{char $\ast$}]{charx0,  }\item[{char $\ast$}]{chary0,  }\item[{char $\ast$}]{charx1,  }\item[{char $\ast$}]{chary1,  }\item[{char $\ast$}]{charx2,  }\item[{char $\ast$}]{chary2,  }\item[{int}]{kleur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw__functions_8c_a7f08a2d8321f298167f106a067efb8a8}\label{draw__functions_8c_a7f08a2d8321f298167f106a067efb8a8}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!maak\+\_\+ellips@{maak\+\_\+ellips}}
+\index{maak\+\_\+ellips@{maak\+\_\+ellips}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{maak\+\_\+ellips()}{maak\_ellips()}}
+{\footnotesize\ttfamily void maak\+\_\+ellips (\begin{DoxyParamCaption}\item[{char $\ast$}]{charx\+\_\+mp,  }\item[{char $\ast$}]{chary\+\_\+mp,  }\item[{char $\ast$}]{charradius\+\_\+x,  }\item[{char $\ast$}]{charradius\+\_\+y,  }\item[{int}]{kleur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw__functions_8c_a4ee6635b98c8c085664b5c0699b81ef4}\label{draw__functions_8c_a4ee6635b98c8c085664b5c0699b81ef4}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!maak\+\_\+lijn@{maak\+\_\+lijn}}
+\index{maak\+\_\+lijn@{maak\+\_\+lijn}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{maak\+\_\+lijn()}{maak\_lijn()}}
+{\footnotesize\ttfamily void maak\+\_\+lijn (\begin{DoxyParamCaption}\item[{char $\ast$}]{charx1,  }\item[{char $\ast$}]{chary1,  }\item[{char $\ast$}]{charx2,  }\item[{char $\ast$}]{chary2,  }\item[{char $\ast$}]{chardikte,  }\item[{int}]{kleur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw__functions_8c_a03049c88edb3e5aa9d3473e75c3d1d41}\label{draw__functions_8c_a03049c88edb3e5aa9d3473e75c3d1d41}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!maak\+\_\+lijndriehoek@{maak\+\_\+lijndriehoek}}
+\index{maak\+\_\+lijndriehoek@{maak\+\_\+lijndriehoek}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{maak\+\_\+lijndriehoek()}{maak\_lijndriehoek()}}
+{\footnotesize\ttfamily void maak\+\_\+lijndriehoek (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{dikte,  }\item[{int}]{kleur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw__functions_8c_a3e838cb42e553ffb6e59967d897b223d}\label{draw__functions_8c_a3e838cb42e553ffb6e59967d897b223d}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!maak\+\_\+rechthoek@{maak\+\_\+rechthoek}}
+\index{maak\+\_\+rechthoek@{maak\+\_\+rechthoek}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{maak\+\_\+rechthoek()}{maak\_rechthoek()}}
+{\footnotesize\ttfamily void maak\+\_\+rechthoek (\begin{DoxyParamCaption}\item[{char $\ast$}]{charxlo,  }\item[{char $\ast$}]{charylo,  }\item[{char $\ast$}]{charxrb,  }\item[{char $\ast$}]{charyrb,  }\item[{int}]{kleur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw__functions_8c_ae4790155ab2d35f31c845848c8042757}\label{draw__functions_8c_ae4790155ab2d35f31c845848c8042757}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!maak\+\_\+tekst@{maak\+\_\+tekst}}
+\index{maak\+\_\+tekst@{maak\+\_\+tekst}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{maak\+\_\+tekst()}{maak\_tekst()}}
+{\footnotesize\ttfamily void maak\+\_\+tekst (\begin{DoxyParamCaption}\item[{char $\ast$}]{charx,  }\item[{char $\ast$}]{chary,  }\item[{char $\ast$}]{chartekst,  }\item[{char $\ast$}]{charfontnaam,  }\item[{int}]{kleur,  }\item[{char $\ast$}]{charstijl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{draw__functions_8c_a83755e0ad8b8d746fff820ffde50262c}\label{draw__functions_8c_a83755e0ad8b8d746fff820ffde50262c}} 
+\index{draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}!wacht@{wacht}}
+\index{wacht@{wacht}!draw\+\_\+functions.\+c@{draw\+\_\+functions.\+c}}
+\subsubsection{\texorpdfstring{wacht()}{wacht()}}
+{\footnotesize\ttfamily void wacht (\begin{DoxyParamCaption}\item[{int}]{msecs }\end{DoxyParamCaption})}
+

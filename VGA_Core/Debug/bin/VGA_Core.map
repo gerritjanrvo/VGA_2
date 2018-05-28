@@ -818,7 +818,19 @@ Linker script and memory map
 
                 0x20020000                _eram = 0x20020000
 
+<<<<<<< HEAD
 .text           0x08000000     0x4e18
+=======
+<<<<<<< HEAD
+.text           0x08000000     0x9048
+=======
+<<<<<<< HEAD
+.text           0x08000000     0x93b0
+=======
+.text           0x08000000     0x9008
+>>>>>>> origin/master
+>>>>>>> 538f074d2f76e9bb5ba9c4985c2d773bd5c4608e
+>>>>>>> origin/master
  *(.isr_vector)
  .isr_vector    0x08000000      0x188 ..\obj\startup_stm32f4xx.o
                 0x08000000                g_pfnVectors
@@ -1096,6 +1108,7 @@ Linker script and memory map
                 0x08002b68      0x13c ..\obj\logic_Layer.o
                 0x08002b68                handleArgument
  .text.handleKleur
+<<<<<<< HEAD
                 0x08002ca4      0x15c ..\obj\logic_Layer.o
                 0x08002ca4                handleKleur
  .text.handleFirstArgument
@@ -1159,6 +1172,75 @@ Linker script and memory map
                 0x08004060                strlen
  .text.strtok   0x080040c0       0x10 c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strtok.o)
                 0x080040c0                strtok
+=======
+                0x08006c88      0x164 ..\obj\logic_Layer.o
+                0x08006c88                handleKleur
+ .text.handleFirstArgument
+                0x08006dec      0x178 ..\obj\logic_Layer.o
+                0x08006dec                handleFirstArgument
+ .text          0x08006f64      0x370 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+                0x08006f64                __aeabi_drsub
+                0x08006f6c                __aeabi_dsub
+                0x08006f6c                __subdf3
+                0x08006f70                __aeabi_dadd
+                0x08006f70                __adddf3
+                0x080071e8                __floatunsidf
+                0x080071e8                __aeabi_ui2d
+                0x08007208                __floatsidf
+                0x08007208                __aeabi_i2d
+                0x0800722c                __aeabi_f2d
+                0x0800722c                __extendsfdf2
+                0x08007268                __floatundidf
+                0x08007268                __aeabi_ul2d
+                0x08007278                __floatdidf
+                0x08007278                __aeabi_l2d
+ .text          0x080072d4      0x424 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+                0x080072d4                __aeabi_dmul
+                0x080072d4                __muldf3
+                0x08007528                __divdf3
+                0x08007528                __aeabi_ddiv
+ .text          0x080076f8       0x50 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_fixdfsi.o)
+                0x080076f8                __aeabi_d2iz
+                0x080076f8                __fixdfsi
+ .text          0x08007748       0x40 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_fixunsdfsi.o)
+                0x08007748                __aeabi_d2uiz
+                0x08007748                __fixunsdfsi
+ .text          0x08007788      0x21c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+                0x08007788                __aeabi_frsub
+                0x08007790                __subsf3
+                0x08007790                __aeabi_fsub
+                0x08007794                __aeabi_fadd
+                0x08007794                __addsf3
+                0x080078f4                __aeabi_ui2f
+                0x080078f4                __floatunsisf
+                0x080078fc                __aeabi_i2f
+                0x080078fc                __floatsisf
+                0x08007918                __aeabi_ul2f
+                0x08007918                __floatundisf
+                0x08007928                __aeabi_l2f
+                0x08007928                __floatdisf
+ .text          0x080079a4      0x2a0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+                0x080079a4                __mulsf3
+                0x080079a4                __aeabi_fmul
+                0x08007b0c                __aeabi_fdiv
+                0x08007b0c                __divsf3
+ .text.atoi     0x08007c44        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-atoi.o)
+                0x08007c44                atoi
+ .text          0x08007c4c      0x134 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memcpy.o)
+                0x08007c4c                memcpy
+ .text.memset   0x08007d80       0x9c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-memset.o)
+                0x08007d80                memset
+ *fill*         0x08007e1c        0x4 
+ .text          0x08007e20      0x2dc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strcmp.o)
+                0x08007e28                strcmp
+ .text.strcpy   0x080080fc       0xbc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strcpy.o)
+                0x080080fc                strcpy
+ *fill*         0x080081b8        0x8 
+ .text          0x080081c0       0xdc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strlen.o)
+                0x080081c0                strlen
+ .text.strtok   0x0800829c       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strtok.o)
+                0x0800829c                strtok
+>>>>>>> origin/master
  .text.__strtok_r
                 0x080040d0       0x64 c:/program files (x86)/gnu tools arm embedded/4.8 2013q4/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-strtok_r.o)
                 0x080040d0                __strtok_r
@@ -1210,6 +1292,7 @@ Linker script and memory map
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
+<<<<<<< HEAD
                 0x08004e18                __exidx_start = .
 
 .ARM.exidx
@@ -1219,6 +1302,66 @@ Linker script and memory map
                 0x08004e18                _sidata = __etext
 
 .data           0x20000000     0x2ce4 load address 0x08004e18
+=======
+                0x080093b0                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x080093b0                __exidx_end = .
+                0x080093b0                __etext = .
+                0x080093b0                _sidata = __etext
+
+.data           0x20000000      0x444 load address 0x080093b0
+=======
+ .rodata        0x08008450       0x16 ..\obj\main.o
+ *fill*         0x08008466        0x2 
+ .rodata        0x08008468      0x960 ..\obj\draw_functions.o
+ .rodata        0x08008dc8      0x176 ..\obj\logic_Layer.o
+ *fill*         0x08008f3e        0x2 
+ .rodata._ctype_
+                0x08008f40      0x101 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-ctype_.o)
+                0x08008f40                _ctype_
+ *fill*         0x08009041        0x3 
+ .rodata.str1.4
+                0x08009044        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m\libg.a(lib_a-impure.o)
+                                  0x2 (size before relaxing)
+ *(.eh_fram e*)
+
+.glue_7         0x08009048        0x0
+ .glue_7        0x08009048        0x0 linker stubs
+
+.glue_7t        0x08009048        0x0
+ .glue_7t       0x08009048        0x0 linker stubs
+
+.vfp11_veneer   0x08009048        0x0
+ .vfp11_veneer  0x08009048        0x0 linker stubs
+
+.v4_bx          0x08009048        0x0
+ .v4_bx         0x08009048        0x0 linker stubs
+
+.iplt           0x08009048        0x0
+ .iplt          0x08009048        0x0 ..\obj\front_Layer.o
+
+.rel.dyn        0x08009048        0x0
+ .rel.iplt      0x08009048        0x0 ..\obj\front_Layer.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x08009048                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x08009048                __exidx_end = .
+                0x08009048                __etext = .
+                0x08009048                _sidata = __etext
+
+<<<<<<< HEAD
+.data           0x20000000      0x444 load address 0x08009048
+=======
+.data           0x20000000      0x444 load address 0x08009008
+>>>>>>> origin/master
+>>>>>>> 538f074d2f76e9bb5ba9c4985c2d773bd5c4608e
+>>>>>>> origin/master
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = __data_start__
  *(vtable)
@@ -1279,6 +1422,7 @@ Linker script and memory map
                 0x20002ce4                __data_end__ = .
                 0x20002ce4                _edata = __data_end__
 
+<<<<<<< HEAD
 .igot.plt       0x20002ce4        0x0 load address 0x08007afc
  .igot.plt      0x00000000        0x0 ..\obj\front_Layer.o
 
@@ -1286,6 +1430,29 @@ Linker script and memory map
                 0x20002ce4                . = ALIGN (0x4)
                 0x20002ce4                __bss_start__ = .
                 0x20002ce4                _sbss = __bss_start__
+=======
+<<<<<<< HEAD
+.igot.plt       0x20000444        0x0 load address 0x0800948c
+ .igot.plt      0x20000444        0x0 ..\obj\front_Layer.o
+
+.bss            0x20000444    0x12e7c load address 0x0800948c
+=======
+<<<<<<< HEAD
+.igot.plt       0x20000444        0x0 load address 0x080097f4
+ .igot.plt      0x00000000        0x0 ..\obj\front_Layer.o
+
+.bss            0x20000444    0x12e84 load address 0x080097f4
+=======
+.igot.plt       0x20000444        0x0 load address 0x0800944c
+ .igot.plt      0x20000444        0x0 ..\obj\front_Layer.o
+
+.bss            0x20000444    0x12e7c load address 0x0800944c
+>>>>>>> origin/master
+>>>>>>> 538f074d2f76e9bb5ba9c4985c2d773bd5c4608e
+                0x20000444                . = ALIGN (0x4)
+                0x20000444                __bss_start__ = .
+                0x20000444                _sbss = __bss_start__
+>>>>>>> origin/master
  *(.bss*)
  .bss           0x20002ce4        0x4 ..\obj\uart.o
                 0x20002ce4                charcounter
@@ -1310,9 +1477,23 @@ Linker script and memory map
  *(.heap*)
                 0x20015bc4                __HeapLimit = .
 
+<<<<<<< HEAD
 .co_stack       0x20015bc4      0x804 load address 0x0801a9dc
                 0x20015bc8                . = ALIGN (0x8)
  *fill*         0x20015bc4        0x4 
+=======
+<<<<<<< HEAD
+.co_stack       0x200132c0      0x800 load address 0x0801c308
+=======
+<<<<<<< HEAD
+.co_stack       0x200132c8      0x800 load address 0x0801c678
+                0x200132c8                . = ALIGN (0x8)
+=======
+.co_stack       0x200132c0      0x800 load address 0x0801c2c8
+>>>>>>> 538f074d2f76e9bb5ba9c4985c2d773bd5c4608e
+                0x200132c0                . = ALIGN (0x8)
+>>>>>>> origin/master
+>>>>>>> origin/master
  *(.co_stack .co_stack.*)
  .co_stack      0x20015bc8      0x800 ..\obj\startup_stm32f4xx.o
                 0x20015bc8                pulStack
@@ -1426,6 +1607,7 @@ OUTPUT(VGA_Core.elf elf32-littlearm)
  .debug_ranges  0x00000500      0x2e8 ..\obj\stm32f4xx_tim.o
  .debug_ranges  0x000007e8       0x28 ..\obj\logic_Layer.o
 
+<<<<<<< HEAD
 .debug_line     0x00000000     0x2ef8
  .debug_line    0x00000000      0x16a ..\obj\front_Layer.o
  .debug_line    0x0000016a      0x436 ..\obj\stm32f4xx_usart.o
@@ -1442,6 +1624,27 @@ OUTPUT(VGA_Core.elf elf32-littlearm)
  .debug_line    0x00002127      0x1d9 ..\obj\misc.o
  .debug_line    0x00002300      0x9f9 ..\obj\stm32f4xx_tim.o
  .debug_line    0x00002cf9      0x1ff ..\obj\logic_Layer.o
+=======
+<<<<<<< HEAD
+.debug_line     0x00000000     0x33c2
+=======
+<<<<<<< HEAD
+.debug_line     0x00000000     0x2d8b
+ .debug_line    0x00000000       0x75 ..\obj\front_Layer.o
+ .debug_line    0x00000075      0x436 ..\obj\stm32f4xx_usart.o
+ .debug_line    0x000004ab      0x388 ..\obj\uart.o
+ .debug_line    0x00000833       0x9d ..\obj\startup_stm32f4xx.o
+ .debug_line    0x000008d0      0x15c ..\obj\main.o
+ .debug_line    0x00000a2c      0x52e ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x00000f5a      0x46f ..\obj\draw_functions.o
+ .debug_line    0x000013c9      0x2d3 ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x0000169c      0x183 ..\obj\system_stm32f4xx.o
+ .debug_line    0x0000181f      0x370 ..\obj\stm32f4xx_dma.o
+ .debug_line    0x00001b8f      0x32a ..\obj\stm32_ub_vga_screen.o
+ .debug_line    0x00001eb9      0x1d9 ..\obj\misc.o
+ .debug_line    0x00002092      0x9f9 ..\obj\stm32f4xx_tim.o
+ .debug_line    0x00002a8b      0x300 ..\obj\logic_Layer.o
+>>>>>>> origin/master
 
 .debug_str      0x00000000     0x2dcf
  .debug_str     0x00000000      0x2a5 ..\obj\front_Layer.o
@@ -1492,6 +1695,78 @@ OUTPUT(VGA_Core.elf elf32-littlearm)
  .comment       0x00000000       0x71 ..\obj\misc.o
  .comment       0x00000000       0x71 ..\obj\stm32f4xx_tim.o
  .comment       0x00000000       0x71 ..\obj\logic_Layer.o
+<<<<<<< HEAD
+=======
+=======
+.debug_line     0x00000000     0x33bf
+>>>>>>> 538f074d2f76e9bb5ba9c4985c2d773bd5c4608e
+ .debug_line    0x00000000       0x77 ..\obj\front_Layer.o
+ .debug_line    0x00000077      0x4d1 ..\obj\stm32f4xx_usart.o
+ .debug_line    0x00000548      0x3fc ..\obj\uart.o
+ .debug_line    0x00000944       0x9f ..\obj\startup_stm32f4xx.o
+ .debug_line    0x000009e3      0x1cf ..\obj\main.o
+ .debug_line    0x00000bb2      0x5bd ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x0000116f      0x500 ..\obj\draw_functions.o
+ .debug_line    0x0000166f       0x62 ..\obj\IO_Layer.o
+ .debug_line    0x000016d1      0x378 ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x00001a49      0x1fe ..\obj\system_stm32f4xx.o
+ .debug_line    0x00001c47      0x442 ..\obj\stm32f4xx_dma.o
+ .debug_line    0x00002089      0x3aa ..\obj\stm32_ub_vga_screen.o
+ .debug_line    0x00002433      0x256 ..\obj\misc.o
+ .debug_line    0x00002689      0xad9 ..\obj\stm32f4xx_tim.o
+ .debug_line    0x00003162      0x260 ..\obj\logic_Layer.o
+
+.debug_str      0x00000000     0x2df7
+ .debug_str     0x00000000       0xe3 ..\obj\front_Layer.o
+                                 0xe8 (size before relaxing)
+ .debug_str     0x000000e3      0x58d ..\obj\stm32f4xx_usart.o
+                                0x68d (size before relaxing)
+ .debug_str     0x00000670      0x886 ..\obj\uart.o
+                                0xb02 (size before relaxing)
+ .debug_str     0x00000ef6       0xae ..\obj\startup_stm32f4xx.o
+                                0x145 (size before relaxing)
+ .debug_str     0x00000fa4       0x61 ..\obj\main.o
+                                0x1f1 (size before relaxing)
+ .debug_str     0x00001005      0x5e1 ..\obj\stm32f4xx_rcc.o
+                                0x84e (size before relaxing)
+ .debug_str     0x000015e6      0x2d5 ..\obj\draw_functions.o
+                                0x55e (size before relaxing)
+ .debug_str     0x000018bb       0x4f ..\obj\IO_Layer.o
+                                 0xda (size before relaxing)
+ .debug_str     0x0000190a      0x1a1 ..\obj\stm32f4xx_gpio.o
+                                0x4a1 (size before relaxing)
+ .debug_str     0x00001aab      0x10b ..\obj\system_stm32f4xx.o
+                                0x3a8 (size before relaxing)
+ .debug_str     0x00001bb6      0x395 ..\obj\stm32f4xx_dma.o
+                                0x540 (size before relaxing)
+ .debug_str     0x00001f4b      0x291 ..\obj\stm32_ub_vga_screen.o
+                                0xcdb (size before relaxing)
+ .debug_str     0x000021dc      0x15f ..\obj\misc.o
+                                0x3cc (size before relaxing)
+ .debug_str     0x0000233b      0x9fc ..\obj\stm32f4xx_tim.o
+                                0xdce (size before relaxing)
+ .debug_str     0x00002d37       0xc0 ..\obj\logic_Layer.o
+                                0x2eb (size before relaxing)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e ..\obj\front_Layer.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f ..\obj\stm32f4xx_usart.o
+ .comment       0x0000006e       0x6f ..\obj\uart.o
+ .comment       0x0000006e       0x6f ..\obj\startup_stm32f4xx.o
+ .comment       0x0000006e       0x6f ..\obj\main.o
+ .comment       0x0000006e       0x6f ..\obj\stm32f4xx_rcc.o
+ .comment       0x0000006e       0x6f ..\obj\draw_functions.o
+ .comment       0x0000006e       0x6f ..\obj\IO_Layer.o
+ .comment       0x0000006e       0x6f ..\obj\stm32f4xx_gpio.o
+ .comment       0x0000006e       0x6f ..\obj\system_stm32f4xx.o
+ .comment       0x0000006e       0x6f ..\obj\stm32f4xx_dma.o
+ .comment       0x0000006e       0x6f ..\obj\stm32_ub_vga_screen.o
+ .comment       0x0000006e       0x6f ..\obj\misc.o
+ .comment       0x0000006e       0x6f ..\obj\stm32f4xx_tim.o
+ .comment       0x0000006e       0x6f ..\obj\logic_Layer.o
+>>>>>>> origin/master
+>>>>>>> origin/master
 
 .ARM.attributes
                 0x00000000       0x31
