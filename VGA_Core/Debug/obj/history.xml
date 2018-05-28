@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Joost\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods\uC-OS II -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_boot -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_lib -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2 -I..\..\..\..\..\Users\Joost\Documents\GitHub -I..\..\..\..\..\Users\Joost\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods -I..\..\..\..\..\Users\Joost\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods\uC-OS II\Application specific -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\ub_lib -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_lib\include -I..\..\..\..\..\Users\Joost\Documents">
       <target file="logic_Layer.o" lastModified="16392565115">
          <source file="..\..\..\logic_Layer.c" lastModified="16392563df8"/>
@@ -20,45 +22,32 @@
       <target file="IO_Layer.o" lastModified="163923f5a8a">
 =======
 <<<<<<< HEAD
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Gerrit Jan -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\ub_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_boot -I..\..\..\..\..\Users\Gerrit Jan\Documents -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib\include -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2">
-      <target file="logic_Layer.o" lastModified="16392264f96">
-         <source file="..\..\..\logic_Layer.c" lastModified="163922643da"/>
-=======
-<<<<<<< HEAD
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Joost\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods\uC-OS II -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_boot -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_lib -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2 -I..\..\..\..\..\Users\Joost\Documents\GitHub -I..\..\..\..\..\Users\Joost\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods -I..\..\..\..\..\Users\Joost\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods\uC-OS II\Application specific -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\ub_lib -I..\..\..\..\..\Users\Joost\Documents\GitHub\VGA_2\cmsis_lib\include -I..\..\..\..\..\Users\Joost\Documents">
-      <target file="logic_Layer.o" lastModified="16392373596">
-         <source file="..\..\..\logic_Layer.c" lastModified="1639234aa12"/>
-=======
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods\uC-OS II -I..\..\..\..\..\Users\Gerrit Jan -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\ub_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib -I..\..\..\..\..\Users\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods\uC-OS II\Application specific -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_boot -I..\..\..\..\..\Users\Gerrit Jan\Documents -I..\..\..\..\..\Users\Desktop\Hu 2e Jaar\Blok A\Programmeren\uc_methods -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib\include -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2">
-      <target file="logic_Layer.o" lastModified="1639202caf9">
-         <source file="..\..\..\logic_Layer.c" lastModified="16391af992b"/>
->>>>>>> c6da6995fa4731ad1784eace4439c85473dec2cd
 >>>>>>> origin/master
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Gerrit Jan -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\ub_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_boot -I..\..\..\..\..\Users\Gerrit Jan\Documents -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis_lib\include -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2\cmsis -I..\..\..\..\..\Users\Gerrit Jan\Documents\VGA_2">
+      <target file="logic_Layer.o" lastModified="163a610b099">
+         <source file="..\..\..\logic_Layer.c" lastModified="163a5f5612f"/>
       </target>
-      <target file="stm32f4xx_gpio.o" lastModified="163920bc27c">
+      <target file="stm32f4xx_gpio.o" lastModified="163a610a70c">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="163014f316d"/>
       </target>
-<<<<<<< HEAD
-      <target file="uart.o" lastModified="163920bba34">
-         <source file="..\..\..\uart.c" lastModified="16390f92cc5"/>
+      <target file="uart.o" lastModified="163a6109e66">
+         <source file="..\..\..\uart.c" lastModified="163a5fac45d"/>
       </target>
-      <target file="stm32_ub_vga_screen.o" lastModified="163920bc648">
-=======
-<<<<<<< HEAD
-      <target file="uart.o" lastModified="1639237cd42">
-         <source file="..\..\..\uart.c" lastModified="1636d942a73"/>
-=======
-      <target file="stm32_ub_vga_screen.o" lastModified="1639202c39b">
->>>>>>> origin/master
-         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="163014f3190"/>
->>>>>>> c6da6995fa4731ad1784eace4439c85473dec2cd
+      <target file="stm32_ub_vga_screen.o" lastModified="163a610ab40">
+         <source file="..\..\..\ub_lib\stm32_ub_vga_screen.c" lastModified="163927e0f37"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="163920bc4e1">
+      <target file="stm32f4xx_dma.o" lastModified="163a610a98a">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="163014f316b"/>
       </target>
-      <target file="IO_Layer.o" lastModified="163920bc11c">
-         <source file="..\..\..\IO_Layer.c" lastModified="16390f92b46"/>
+      <target file="IO_Layer.o" lastModified="163a610a5c3">
+         <source file="..\..\..\IO_Layer.c" lastModified="163927bb4d4"/>
       </target>
+<<<<<<< HEAD
+      <target file="draw_functions.o" lastModified="163a610a44a">
+         <source file="..\..\..\draw_functions.c" lastModified="163a1f04bd6"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="163a610aeec">
+=======
 <<<<<<< HEAD
       <target file="draw_functions.o" lastModified="163923b63a4">
          <source file="..\..\..\draw_functions.c" lastModified="163923b5a53"/>
@@ -86,12 +75,16 @@
 >>>>>>> origin/master
       </target>
       <target file="stm32f4xx_tim.o" lastModified="163920bc9e2">
+>>>>>>> origin/master
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="163014f317c"/>
->>>>>>> c6da6995fa4731ad1784eace4439c85473dec2cd
       </target>
-      <target file="system_stm32f4xx.o" lastModified="163920bc377">
+      <target file="system_stm32f4xx.o" lastModified="163a610a828">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="163014f3140"/>
       </target>
+<<<<<<< HEAD
+      <target file="front_Layer.o" lastModified="163a6109b49">
+         <source file="..\..\..\front_Layer.c" lastModified="16392635a19"/>
+=======
 <<<<<<< HEAD
       <target file="front_Layer.o" lastModified="163920bb734">
 =======
@@ -120,30 +113,21 @@
       <target file="front_Layer.o" lastModified="1639202b4b2">
 >>>>>>> origin/master
          <source file="..\..\..\front_Layer.c" lastModified="16390f92c85"/>
+>>>>>>> origin/master
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="163920bbb24">
+      <target file="startup_stm32f4xx.o" lastModified="163a6109f3a">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="163014f312d"/>
       </target>
-      <target file="stm32f4xx_usart.o" lastModified="163920bb87b">
+      <target file="stm32f4xx_usart.o" lastModified="163a6109cad">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="16390f92c7d"/>
->>>>>>> c6da6995fa4731ad1784eace4439c85473dec2cd
       </target>
-      <target file="main.o" lastModified="163920bbc7c">
-         <source file="..\..\..\main.c" lastModified="16391af992e"/>
+      <target file="main.o" lastModified="163a610a0b2">
+         <source file="..\..\..\main.c" lastModified="163a610939d"/>
       </target>
-<<<<<<< HEAD
-      <target file="stm32f4xx_rcc.o" lastModified="163920bbe4e">
-=======
-<<<<<<< HEAD
-      <target file="main.o" lastModified="163923aae6b">
-         <source file="..\..\..\main.c" lastModified="1639239a047"/>
-=======
-      <target file="stm32f4xx_rcc.o" lastModified="1639202bb7f">
->>>>>>> origin/master
+      <target file="stm32f4xx_rcc.o" lastModified="163a610a236">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="163014f3177"/>
->>>>>>> c6da6995fa4731ad1784eace4439c85473dec2cd
       </target>
-      <target file="misc.o" lastModified="163920bc77b">
+      <target file="misc.o" lastModified="163a610ac5f">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="163014f3167"/>
 >>>>>>> 538f074d2f76e9bb5ba9c4985c2d773bd5c4608e
       </target>

@@ -5,7 +5,6 @@
  */
 
 #include "front_Layer.h"
-#include "logic_Layer.h"
 
 void uartLezen(char* input)
 {
