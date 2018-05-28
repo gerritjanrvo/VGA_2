@@ -83,15 +83,11 @@ void handleArgument(int nr, char *arg)
 		}
  }
 
-<<<<<<< HEAD
-int handleKleur(char *datakleur)
-{
-=======
 /*
  * @brief Kijk welke kleur het is en return de waarde van de kleur
  */
-int handleKleur(char *datakleur){
->>>>>>> origin/master
+int handleKleur(char *datakleur)
+{
 	if(strcmp(datakleur, "zwart")== 0) {
 		return(0);
 	}
@@ -136,15 +132,12 @@ int handleKleur(char *datakleur){
 	}
 	else if(strcmp(datakleur, "wit")== 0){
 		return(255);
-<<<<<<< HEAD
 	}
-	else{
-		return (0);
+	else
+	{
+		UART_puts("\n Error: kleur onbekend");
+		return(0);
 	}
-=======
-		}
-	else UART_puts("\n Error: kleur onbekend");
->>>>>>> origin/master
 }
 
 void handleFirstArgument()
@@ -157,7 +150,7 @@ void handleFirstArgument()
 		int kleurcode = handleKleur(dataArg.data6);
 		maak_ellips(dataArg.data2, dataArg.data3, dataArg.data4, dataArg.data5, kleurcode);
 	}
-	if(strcmp(dataArg.data1, "rechthoek")== 0){
+	else if(strcmp(dataArg.data1, "rechthoek")== 0){
 		int kleurcode = handleKleur(dataArg.data6);
 		maak_rechthoek(dataArg.data2, dataArg.data3, dataArg.data4, dataArg.data5, kleurcode);
 	}
@@ -165,20 +158,21 @@ void handleFirstArgument()
 		int kleurcode = handleKleur(dataArg.data8);
 		maak_driehoek(dataArg.data2, dataArg.data3, dataArg.data4, dataArg.data5, dataArg.data6, dataArg.data7, kleurcode);
 	}
-	if(strcmp(dataArg.data1, "tekst")== 0){
+	else if(strcmp(dataArg.data1, "tekst")== 0){
 		int kleurcode = handleKleur(dataArg.data6);
 		maak_tekst(dataArg.data2, dataArg.data3, dataArg.data4, dataArg.data5, kleurcode, dataArg.data7);
 	}
 	else if(strcmp(dataArg.data1, "bitmap")== 0){
 		maak_bitmap(dataArg.data2, dataArg.data3, dataArg.data4);
 	}
-	if(strcmp(dataArg.data1, "clearscherm")== 0){
+	else if(strcmp(dataArg.data1, "clearscherm")== 0){
 		int kleurcode = handleKleur(dataArg.data2);
 		maak_clearscherm(kleurcode);
 	}
 	else if(strcmp(dataArg.data1, "wacht")== 0){
 		wacht(dataArg.data2);
 	}
-	else UART_puts("\n Error: onbekent eerste argument");
+	else {
+		UART_puts("\n Error: onbekent eerste argument");
+	}
 }
-
