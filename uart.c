@@ -28,9 +28,12 @@ In the interrupt routine the char is send back to the terminal
 
 */
 
-/* Includes ------------------------------------------------------------------*/
-#include "includes.h"
-#include "main.h"
+
+
+#include "uart.h"
+
+#define CR 13 // carriage return char
+#define LF 10 // linefeed char
 
 char string[100];
 int charcounter = 0;

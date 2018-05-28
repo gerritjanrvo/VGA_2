@@ -1,5 +1,7 @@
-#include "front_Layer.h"
-#include "stm32_ub_vga_screen.h"
+
+
+
+
 #include "draw_functions.h"
 
 void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *chardikte, int kleur)
@@ -83,7 +85,7 @@ void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, 
 	int ylo = atoi(charylo);
 	int xrb = atoi(charxrb);
 	int yrb = atoi(charyrb);
-<<<<<<< HEAD
+
 
 	if(yrb > ylo)
 	{
@@ -98,8 +100,6 @@ void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, 
 		xrb = xlo;
 		xlo = switchx;
 	}
-=======
->>>>>>> origin/master
 
 	int i;
 	int j;
@@ -113,7 +113,8 @@ void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, 
 	}
 }
 
-void maak_driehoek (char *charx0, char *chary0, char *charx1, char *chary1, char *charx2, char *chary2, int kleur){
+void maak_driehoek (char *charx0, char *chary0, char *charx1, char *chary1, char *charx2, char *chary2, int kleur)
+{
 
 	int x0 = atoi(charx0);
 	int y0 = atoi(chary0);
@@ -181,364 +182,20 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 {
 	int x = atoi(charx);
 	int y = atoi(chary);
-<<<<<<< HEAD
+
 	int x1 = x;
-	char tekst[45];
-=======
 	char tekst[40];
-	char fontnaam[40];
-	char stijl[40];
->>>>>>> origin/master
 
 	int i;
 
-	for (i=0;i<45;i++){
+	for (i=0;i<40;i++){
 		tekst[i]=chartekst[i];
 	}
-
-		int bitmap_A[10][10] = {
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,kleur,0,0,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-		int bitmap_B[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,0,0,0,0},
-						{0,kleur,0,0,0,0,kleur,0,0,0},
-						{0,kleur,0,0,0,0,kleur,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,0,0,0,0},
-						{0,kleur,0,0,0,0,kleur,kleur,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,kleur,kleur,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-		int bitmap_C[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-		int bitmap_D[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,0,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-		int bitmap_E[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_F[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,kleur,kleur,kleur,kleur,kleur,kleur,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,kleur,kleur,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_G[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,kleur,kleur,kleur,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,0,kleur,0,0,0,kleur,0,0,0},
-						{0,0,0,kleur,kleur,kleur,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_H[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_I[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_J[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,0,kleur,kleur,kleur,kleur,kleur,0},
-						{0,0,0,0,0,0,0,0,kleur,0},
-						{0,0,0,0,0,0,0,0,kleur,0},
-						{0,0,0,0,0,0,0,0,kleur,0},
-						{0,0,0,0,0,0,0,0,kleur,0},
-						{0,0,kleur,0,0,0,0,0,kleur,0},
-						{0,0,0,kleur,0,0,0,kleur,0,0},
-						{0,0,0,0,kleur,kleur,kleur,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-
-		};
-
-		int bitmap_K[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,kleur,0,0,0,kleur,0,0,0},
-						{0,0,kleur,0,0,kleur,0,0,0,0},
-						{0,0,kleur,kleur,kleur,0,0,0,0,0},
-						{0,0,kleur,kleur,0,0,0,0,0,0},
-						{0,0,kleur,0,kleur,kleur,0,0,0,0},
-						{0,0,kleur,0,0,0,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-
-		};
-
-		int bitmap_L[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,kleur,kleur,kleur,kleur,kleur,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_M[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,0,0,0,0,kleur,kleur,0},
-						{0,kleur,0,kleur,0,0,kleur,0,kleur,0},
-						{0,kleur,0,kleur,0,0,kleur,0,kleur,0},
-						{0,kleur,0,0,kleur,kleur,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_N[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,kleur,0,0,0,0,0,kleur,0},
-						{0,kleur,0,kleur,0,0,0,0,kleur,0},
-						{0,kleur,0,0,kleur,0,0,0,kleur,0},
-						{0,kleur,0,0,0,kleur,0,0,kleur,0},
-						{0,kleur,0,0,0,0,kleur,0,kleur,0},
-						{0,kleur,0,0,0,0,0,kleur,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_O[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-
-		};
-
-		int bitmap_P[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,kleur,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,kleur,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-
-		};
-
-		int bitmap_Q[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,kleur,0,kleur,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,0,kleur,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_R[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,0,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,0,0,0},
-						{0,kleur,kleur,kleur,0,0,0,0,0,0},
-						{0,kleur,0,kleur,kleur,kleur,0,0,0,0},
-						{0,kleur,0,0,0,kleur,kleur,0,0,0},
-						{0,kleur,0,0,0,0,kleur,kleur,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-		int bitmap_S[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,kleur,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,0,0,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,0,0,0,0,0,kleur,0,0},
-						{0,0,0,0,0,0,0,kleur,0,0},
-						{0,0,kleur,kleur,kleur,kleur,kleur,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_T[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_U[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,kleur,0,0},
-						{0,0,kleur,0,0,0,kleur,0,0,0},
-						{0,0,0,kleur,kleur,kleur,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_V[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,0,kleur,0,0,kleur,0,0,0},
-						{0,0,0,kleur,0,0,kleur,0,0,0},
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_W[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,kleur,0,0,kleur,0,0},
-						{0,kleur,0,0,kleur,0,0,kleur,0,0},
-						{0,kleur,0,0,kleur,0,0,kleur,0,0},
-						{0,kleur,0,kleur,0,kleur,0,kleur,0,0},
-						{0,kleur,0,kleur,0,kleur,0,kleur,0,0},
-						{0,kleur,0,kleur,0,kleur,0,kleur,0,0},
-						{0,kleur,0,kleur,0,kleur,0,kleur,0,0},
-						{0,0,kleur,0,0,0,kleur,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_X[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,0,kleur,0,0,kleur,0,0,0},
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,kleur,0,0,kleur,0,0,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_Y[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,0,0,0,0,0,0,kleur,0},
-						{0,0,kleur,0,0,0,0,kleur,0,0},
-						{0,0,0,kleur,0,0,kleur,0,0,0},
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,0,kleur,kleur,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
-		int bitmap_Z[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0},
-						{0,0,0,0,0,0,0,kleur,0,0},
-						{0,0,0,0,0,0,kleur,0,0,0},
-						{0,0,0,0,0,kleur,0,0,0,0},
-						{0,0,0,0,kleur,0,0,0,0,0},
-						{0,0,0,kleur,0,0,0,0,0,0},
-						{0,0,kleur,0,0,0,0,0,0,0},
-						{0,kleur,kleur,kleur,kleur,kleur,kleur,kleur,kleur,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
 
 	char h = 0;
 	int length = 0;
 	int v,w,f;
 	length = (strlen(tekst));
-
-
 
 	for(f=0; f<length; f++, x=x+10)
 	{
@@ -586,7 +243,6 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 		}
 	}
 }
-
 
 void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 {
@@ -715,8 +371,10 @@ void maak_clearscherm (int kleur)
 	UB_VGA_FillScreen(kleur);
 }
 
-void wacht (int msecs)
+void wacht (char *charmsecs)
 {
+	int msecs = atoi(charmsecs);
+
 	uint32_t G_CLK;
 	uint32_t D_mS; // Global variable (ms)
 
