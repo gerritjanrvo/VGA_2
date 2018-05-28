@@ -1,6 +1,9 @@
 
 #include "logic_Layer.h"
 
+/**
+*	@brief \n In deze struct worden de ingekomende argumenten gezet.
+*/
 struct dataStruct
 {
 	char data1[20];
@@ -16,6 +19,9 @@ struct dataStruct
 struct dataStruct dataArg;
 char *p = (char*)&dataArg;
 
+/**
+*	@brief \n In deze functie wordt de inkomende string gesplit op een komma.
+*/
 void string_Splitten (char* input)
 {
 	char *token;
@@ -31,6 +37,9 @@ void string_Splitten (char* input)
 	handleFirstArgument();
 }
 
+/**
+*	@brief \n In deze functie worden de binnenkomende argumenten in een struct geplaatst.
+*/
 void handleArgument(int nr, char *arg)
  {
 	  	switch (nr)
@@ -83,8 +92,8 @@ void handleArgument(int nr, char *arg)
 		}
  }
 
-/*
- * @brief Kijk welke kleur het is en return de waarde van de kleur
+/**
+ * @brief \n Kijk welke kleur het is en return de waarde van de kleur.
  */
 int handleKleur(char *datakleur)
 {
@@ -140,6 +149,9 @@ int handleKleur(char *datakleur)
 	}
 }
 
+/**
+*	@brief \n In deze functie wordt de data mee gegeven in de functie waar hij wordt getekend.
+*/
 void handleFirstArgument()
 {
 	if(strcmp(dataArg.data1, "lijn")== 0){

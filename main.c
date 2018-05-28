@@ -1,20 +1,11 @@
-//--------------------------------------------------------------
-// File     : main.c
-// Datum    : 30.03.2016
-// Version  : 1.0
-// Autor    : UB
-// mods by	: J.F. van der Bent
-// CPU      : STM32F4
-// IDE      : CooCox CoIDE 1.7.x
-// Module   : CMSIS_BOOT, M4_CMSIS_CORE
-// Function : VGA_core DMA LIB 320x240, 8bit color
-//--------------------------------------------------------------
-
-/*
+/**
  * @mainpage
- * 	\n VGA programma
- * 	\n Joost Kouijzer & Gerrit Jan Rijken van Olst
- *
+ * 	\n File		: VGA Opdracht
+ * 	\n Versie	: 1
+ * 	\n Blok		: D
+ * 	\n Leerjaar	: 3
+ * 	\n Datum	: 28 Mei 2018
+ * 	\n Autor	: Joost Kouijzer & Gerrit Jan Rijken van Olst
  */
 
 #include "main.h"

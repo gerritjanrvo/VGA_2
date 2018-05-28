@@ -1,5 +1,7 @@
 var uart_8c =
 [
+    [ "CR", "uart_8c.html#a876ce77f3c672c7162658151e648389e", null ],
+    [ "LF", "uart_8c.html#a350c9d6cb81908d59427ee96844d1a9c", null ],
     [ "UART_get", "uart_8c.html#aba72ba3c665a23c4d7e25f442bc2ce3a", null ],
     [ "UART_gets", "uart_8c.html#ac3c92c13f9ae4998665a9ebb2868ada5", null ],
     [ "UART_init", "uart_8c.html#ab60a36f7295d704926120d22f806dcd1", null ],

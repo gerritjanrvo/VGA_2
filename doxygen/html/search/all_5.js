@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['includes_2eh',['includes.h',['../includes_8h.html',1,'']]],
-  ['init',['init',['../_i_o___layer_8c.html#a02fd73d861ef2e4aabb38c0c9ff82947',1,'init():&#160;IO_Layer.c'],['../_i_o___layer_8h.html#a02fd73d861ef2e4aabb38c0c9ff82947',1,'init():&#160;IO_Layer.c']]],
-  ['input',['input',['../front___layer_8h.html#aefcb3ef9e8f9435c14d32c82769e7d41',1,'front_Layer.h']]],
-  ['io_5flayer_2ec',['IO_Layer.c',['../_i_o___layer_8c.html',1,'']]],
-  ['io_5flayer_2eh',['IO_Layer.h',['../_i_o___layer_8h.html',1,'']]]
+  ['handleargument',['handleArgument',['../logic___layer_8c.html#ac7424be6b74758a9faacc72222a6744a',1,'handleArgument(int nr, char *arg):&#160;logic_Layer.c'],['../logic___layer_8h.html#ac7424be6b74758a9faacc72222a6744a',1,'handleArgument(int nr, char *arg):&#160;logic_Layer.c']]],
+  ['handlefirstargument',['handleFirstArgument',['../logic___layer_8c.html#abb08add9f00bb4bb0e7ee24ecaf04bc6',1,'handleFirstArgument():&#160;logic_Layer.c'],['../logic___layer_8h.html#abb08add9f00bb4bb0e7ee24ecaf04bc6',1,'handleFirstArgument():&#160;logic_Layer.c']]],
+  ['handlekleur',['handleKleur',['../logic___layer_8c.html#a314cd87f1240e2e884fcc9166529f068',1,'handleKleur(char *datakleur):&#160;logic_Layer.c'],['../logic___layer_8h.html#a314cd87f1240e2e884fcc9166529f068',1,'handleKleur(char *datakleur):&#160;logic_Layer.c']]]
 ];
