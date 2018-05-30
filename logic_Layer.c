@@ -1,3 +1,8 @@
+/*
+ * logic_Layer.c
+ *
+ * Gemaakt door: Joost Kouijzer & Gerrit Jan Rijken van Olst
+ */
 
 #include "logic_Layer.h"
 
@@ -16,6 +21,9 @@ struct dataStruct
 	char data8[20];
 };
 
+/**
+*	@brief \n Aanmaken van een struct
+*/
 struct dataStruct dataArg;
 char *p = (char*)&dataArg;
 

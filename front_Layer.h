@@ -7,17 +7,12 @@
 #ifndef __FRONT_LAYER_H
 #define __FRONT_LAYER_H
 
-
 #include "main.h"
-
-
-char input[100];
 
 //----------------------------------------------------------
 // Global Function Call
 //----------------------------------------------------------
-void uartLezen(char* input);
 
-
+void uartLezen();
 
 #endif 	//__FRONT_LAYER_H

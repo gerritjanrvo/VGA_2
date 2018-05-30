@@ -1,11 +1,14 @@
+/*
+ * draw_functions.c
+ *
+ * Gemaakt door: Joost Kouijzer & Gerrit Jan Rijken van Olst
+ */
 
 #include "draw_functions.h"
 
 /**
- * 		@brief \n Functie waarmee de lijn wordt getekend
+ * 		@brief \n Pijl naar rechts
  */
-<<<<<<< HEAD
-//pijl naar rechts
 int bitmap_1[10][10] = {
 	{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF},
 	{0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0x03,0xFF,0xFF,0xFF},
@@ -19,7 +22,9 @@ int bitmap_1[10][10] = {
 	{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF}
 };
 
-//pijl naar boven
+/**
+ * 		@brief \n Pijl naar boven
+ */
 int bitmap_2[10][10] = {
 	{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF},
 	{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
@@ -33,7 +38,9 @@ int bitmap_2[10][10] = {
 	{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF}
 };
 
-//pijl naar links
+/**
+ * 		@brief \n Pijl naar links
+ */
 int bitmap_3[10][10] = {
 	{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF},
 	{0xFF,0xFF,0xFF,0x03,0xFF,0x03,0xFF,0xFF,0xFF,0xFF},
@@ -47,7 +54,9 @@ int bitmap_3[10][10] = {
 	{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF}
 };
 
-// pijl naar beneden
+/**
+ * 		@brief \n Pijl naar beneden
+ */
 int bitmap_4[10][10] = {
 	{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF},
 	{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
@@ -61,7 +70,9 @@ int bitmap_4[10][10] = {
 	{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF}
 };
 
-//smiley blij
+/**
+ * 		@brief \n Smiley blij
+ */
 int bitmap_5[10][10] = {
 	{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF},
 	{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
@@ -75,7 +86,9 @@ int bitmap_5[10][10] = {
 	{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF}
 };
 
-//smiley boos
+/**
+ * 		@brief \n Smiley boos
+ */
 int bitmap_6[10][10] = {
 	{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF},
 	{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
@@ -88,7 +101,10 @@ int bitmap_6[10][10] = {
 	{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
 	{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF}
 };
-//Data
+
+/**
+ * 		\n Letter A
+ */
 int bitmap_A[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,0,0,0,1,1,0,0,0,0},
@@ -101,6 +117,10 @@ int bitmap_A[10][10] = {
 	{0,1,0,0,0,0,0,0,1,0},
 	{0,0,0,0,0,0,0,0,0,0}
 };
+
+/**
+ * 		\n Letter B
+ */
 int bitmap_B[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,1,1,1,1,1,0,0,0,0},
@@ -113,6 +133,10 @@ int bitmap_B[10][10] = {
 	{0,1,1,1,1,1,0,0,0,0},
 	{0,0,0,0,0,0,0,0,0,0}
 };
+
+/**
+ * 		\n Letter C
+ */
 int bitmap_C[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,0,0,1,1,1,1,0,0,0},
@@ -125,6 +149,10 @@ int bitmap_C[10][10] = {
 	{0,0,0,1,1,1,1,0,0,0},
 	{0,0,0,0,0,0,0,0,0,0}
 };
+
+/**
+ * 		\n Letter D
+ */
 int bitmap_D[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,1,1,1,1,1,1,0,0,0},
@@ -137,6 +165,10 @@ int bitmap_D[10][10] = {
 	{0,1,1,1,1,1,1,0,0,0},
 	{0,0,0,0,0,0,0,0,0,0}
 };
+
+/**
+ * 		\n Letter E
+ */
 int bitmap_E[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,1,1,1,1,1,1,1,1,0},
@@ -150,6 +182,9 @@ int bitmap_E[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter F
+ */
 int bitmap_F[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,0,1,1,1,1,1,1,0,0},
@@ -163,6 +198,9 @@ int bitmap_F[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter G
+ */
 int bitmap_G[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,0,0,1,1,1,1,0,0,0},
@@ -176,6 +214,9 @@ int bitmap_G[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter H
+ */
 int bitmap_H[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,1,0,0,0,0,0,0,1,0},
@@ -189,6 +230,9 @@ int bitmap_H[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter I
+ */
 int bitmap_I[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,1,1,1,1,1,1,1,0,0},
@@ -202,6 +246,9 @@ int bitmap_I[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter J
+ */
 int bitmap_J[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,0,0,0,1,1,1,1,1,0},
@@ -215,6 +262,9 @@ int bitmap_J[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter K
+ */
 int bitmap_K[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,0,1,0,0,0,0,1,0,0},
@@ -228,6 +278,9 @@ int bitmap_K[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter L
+ */
 int bitmap_L[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,0,1,0,0,0,0,0,0,0},
@@ -241,6 +294,9 @@ int bitmap_L[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter M
+ */
 int bitmap_M[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,1,1,0,0,0,0,1,1,0},
@@ -254,178 +310,217 @@ int bitmap_M[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0}
 };
 
+/**
+ * 		\n Letter N
+ */
 int bitmap_N[10][10] = {
 	{0,0,0,0,0,0,0,0,0,0},
 	{0,1,0,0,0,0,0,0,1,0},
-						{0,1,1,0,0,0,0,0,1,0},
-						{0,1,0,1,0,0,0,0,1,0},
-						{0,1,0,0,1,0,0,0,1,0},
-						{0,1,0,0,0,1,0,0,1,0},
-						{0,1,0,0,0,0,1,0,1,0},
-						{0,1,0,0,0,0,0,1,1,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
+	{0,1,1,0,0,0,0,0,1,0},
+	{0,1,0,1,0,0,0,0,1,0},
+	{0,1,0,0,1,0,0,0,1,0},
+	{0,1,0,0,0,1,0,0,1,0},
+	{0,1,0,0,0,0,1,0,1,0},
+	{0,1,0,0,0,0,0,1,1,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_O[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,1,1,1,1,0,0,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,0,0,1,1,1,1,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
+/**
+ * 		\n Letter O
+ */
+int bitmap_O[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,0,0,1,1,1,1,0,0,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,0,0,1,1,1,1,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		};
+/**
+ * 		\n Letter P
+ */
+int bitmap_P[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,0,1,1,1,1,1,0,0,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,0,1,1,1,1,1,0,0,0},
+	{0,0,1,0,0,0,0,0,0,0},
+	{0,0,1,0,0,0,0,0,0,0},
+	{0,0,1,0,0,0,0,0,0,0},
+	{0,0,1,0,0,0,0,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_P[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,1,1,1,1,1,0,0,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,0,1,1,1,1,1,0,0,0},
-						{0,0,1,0,0,0,0,0,0,0},
-						{0,0,1,0,0,0,0,0,0,0},
-						{0,0,1,0,0,0,0,0,0,0},
-						{0,0,1,0,0,0,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
+/**
+ * 		\n Letter Q
+ */
+int bitmap_Q[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,0,0,1,1,1,1,0,0,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,1,0,0,0,0,1,0,1,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,0,0,1,1,1,1,0,1,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		};
+/**
+ * 		\n Letter R
+ */
+int bitmap_R[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,1,1,1,1,1,1,0,0,0},
+	{0,1,0,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,1,0,0},
+	{0,1,1,1,1,1,1,0,0,0},
+	{0,1,1,1,0,0,0,0,0,0},
+	{0,1,0,1,1,1,0,0,0,0},
+	{0,1,0,0,0,1,1,0,0,0},
+	{0,1,0,0,0,0,1,1,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_Q[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,1,1,1,1,0,0,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,1,0,0,0,0,1,0,1,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,0,0,1,1,1,1,0,1,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
+/**
+* 		\n Letter S
+*/
+int bitmap_S[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,0,0,1,1,1,1,1,0,0},
+	{0,0,1,0,0,0,0,0,0,0},
+	{0,0,1,0,0,0,0,0,0,0},
+	{0,0,0,1,1,1,1,0,0,0},
+	{0,0,0,0,0,0,0,1,0,0},
+	{0,0,0,0,0,0,0,1,0,0},
+	{0,0,1,1,1,1,1,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_R[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,1,1,1,1,1,1,0,0,0},
-						{0,1,0,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,1,0,0},
-						{0,1,1,1,1,1,1,0,0,0},
-						{0,1,1,1,0,0,0,0,0,0},
-						{0,1,0,1,1,1,0,0,0,0},
-						{0,1,0,0,0,1,1,0,0,0},
-						{0,1,0,0,0,0,1,1,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-		int bitmap_S[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,0,0,1,1,1,1,1,0,0},
-						{0,0,1,0,0,0,0,0,0,0},
-						{0,0,1,0,0,0,0,0,0,0},
-						{0,0,0,1,1,1,1,0,0,0},
-						{0,0,0,0,0,0,0,1,0,0},
-						{0,0,0,0,0,0,0,1,0,0},
-						{0,0,1,1,1,1,1,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
+/**
+* 		\n Letter T
+*/
+int bitmap_T[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,1,1,1,1,1,1,1,0,0},
+	{0,0,0,0,1,0,0,0,0,0},
+	{0,0,0,0,1,0,0,0,0,0},
+	{0,0,0,0,1,0,0,0,0,0},
+	{0,0,0,0,1,0,0,0,0,0},
+	{0,0,0,0,1,0,0,0,0,0},
+	{0,0,0,0,1,0,0,0,0,0},
+	{0,0,0,0,1,0,0,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_T[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,1,1,1,1,1,1,1,0,0},
-						{0,0,0,0,1,0,0,0,0,0},
-						{0,0,0,0,1,0,0,0,0,0},
-						{0,0,0,0,1,0,0,0,0,0},
-						{0,0,0,0,1,0,0,0,0,0},
-						{0,0,0,0,1,0,0,0,0,0},
-						{0,0,0,0,1,0,0,0,0,0},
-						{0,0,0,0,1,0,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
+/**
+* 		\n Letter U
+*/
+int bitmap_U[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,1,0,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,1,0,0},
+	{0,0,1,0,0,0,1,0,0,0},
+	{0,0,0,1,1,1,0,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_U[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,1,0,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,1,0,0},
-						{0,0,1,0,0,0,1,0,0,0},
-						{0,0,0,1,1,1,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
+/**
+* 		\n Letter V
+*/
+int bitmap_V[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,0,0,1,0,0,1,0,0,0},
+	{0,0,0,1,0,0,1,0,0,0},
+	{0,0,0,0,1,1,0,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_V[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,0,0,1,0,0,1,0,0,0},
-						{0,0,0,1,0,0,1,0,0,0},
-						{0,0,0,0,1,1,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
+/**
+* 		\n Letter W
+*/
+int bitmap_W[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,1,0,0,1,0,0,1,0,0},
+	{0,1,0,0,1,0,0,1,0,0},
+	{0,1,0,0,1,0,0,1,0,0},
+	{0,1,0,1,0,1,0,1,0,0},
+	{0,1,0,1,0,1,0,1,0,0},
+	{0,1,0,1,0,1,0,1,0,0},
+	{0,1,0,1,0,1,0,1,0,0},
+	{0,0,1,0,0,0,1,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_W[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,1,0,0,1,0,0,1,0,0},
-						{0,1,0,0,1,0,0,1,0,0},
-						{0,1,0,0,1,0,0,1,0,0},
-						{0,1,0,1,0,1,0,1,0,0},
-						{0,1,0,1,0,1,0,1,0,0},
-						{0,1,0,1,0,1,0,1,0,0},
-						{0,1,0,1,0,1,0,1,0,0},
-						{0,0,1,0,0,0,1,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
+/**
+* 		\n Letter X
+*/
+int bitmap_X[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,0,0,1,0,0,1,0,0,0},
+	{0,0,0,0,1,1,0,0,0,0},
+	{0,0,0,0,1,1,0,0,0,0},
+	{0,0,0,1,0,0,1,0,0,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_X[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,0,0,1,0,0,1,0,0,0},
-						{0,0,0,0,1,1,0,0,0,0},
-						{0,0,0,0,1,1,0,0,0,0},
-						{0,0,0,1,0,0,1,0,0,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
+/**
+* 		\n Letter Y
+*/
+int bitmap_Y[10][10] = {
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,1,0,0,0,0,0,0,1,0},
+	{0,0,1,0,0,0,0,1,0,0},
+	{0,0,0,1,0,0,1,0,0,0},
+	{0,0,0,0,1,1,0,0,0,0},
+	{0,0,0,0,1,1,0,0,0,0},
+	{0,0,0,0,1,1,0,0,0,0},
+	{0,0,0,0,1,1,0,0,0,0},
+	{0,0,0,0,1,1,0,0,0,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-		int bitmap_Y[10][10] = {
-						{0,0,0,0,0,0,0,0,0,0},
-						{0,1,0,0,0,0,0,0,1,0},
-						{0,0,1,0,0,0,0,1,0,0},
-						{0,0,0,1,0,0,1,0,0,0},
-						{0,0,0,0,1,1,0,0,0,0},
-						{0,0,0,0,1,1,0,0,0,0},
-						{0,0,0,0,1,1,0,0,0,0},
-						{0,0,0,0,1,1,0,0,0,0},
-						{0,0,0,0,1,1,0,0,0,0},
-						{0,0,0,0,0,0,0,0,0,0}
-		};
-
+/**
+* 		\n Letter Z
+*/
 int bitmap_Z[10][10] = {
-		{0,0,0,0,0,0,0,0,0,0},
-		{0,1,1,1,1,1,1,1,1,0},
-		{0,0,0,0,0,0,0,1,0,0},
-		{0,0,0,0,0,0,1,0,0,0},
-		{0,0,0,0,0,1,0,0,0,0},
-		{0,0,0,0,1,0,0,0,0,0},
-		{0,0,0,1,0,0,0,0,0,0},
-		{0,0,1,0,0,0,0,0,0,0},
-		{0,1,1,1,1,1,1,1,1,0},
-		{0,0,0,0,0,0,0,0,0,0}
-		};
+	{0,0,0,0,0,0,0,0,0,0},
+	{0,1,1,1,1,1,1,1,1,0},
+	{0,0,0,0,0,0,0,1,0,0},
+	{0,0,0,0,0,0,1,0,0,0},
+	{0,0,0,0,0,1,0,0,0,0},
+	{0,0,0,0,1,0,0,0,0,0},
+	{0,0,0,1,0,0,0,0,0,0},
+	{0,0,1,0,0,0,0,0,0,0},
+	{0,1,1,1,1,1,1,1,1,0},
+	{0,0,0,0,0,0,0,0,0,0}
+};
 
-=======
->>>>>>> 788f69eeb5bf507bcd86fb21924fe7ee0ede9d87
+/**
+ * 		@brief \n Functie waarmee de lijn wordt getekend.
+ */
 void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *chardikte, int kleur)
 {
 	int x1 = atoi(charx1);
@@ -482,7 +577,7 @@ void maak_lijn(char *charx1, char *chary1, char *charx2, char *chary2, char *cha
 }
 
 /**
- * 		@brief \n Functie waarmee de ellips wordt getekend
+ * 		@brief \n Functie waarmee de ellips wordt getekend.
  */
 void maak_ellips(char *charx_mp, char *chary_mp, char *charradius_x, char *charradius_y, int kleur)
 {
@@ -505,7 +600,7 @@ void maak_ellips(char *charx_mp, char *chary_mp, char *charradius_x, char *charr
 }
 
 /**
- * 		@brief \n Functie waarmee de rechthoek wordt getekend
+ * 		@brief \n Functie waarmee de rechthoek wordt getekend.
  */
 void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, int kleur)
 {
@@ -542,7 +637,7 @@ void maak_rechthoek(char *charxlo, char *charylo, char *charxrb, char *charyrb, 
 }
 
 /**
- * 		@brief \n Functie waarmee de driehoek wordt getekend
+ * 		@brief \n Functie waarmee de driehoek wordt getekend.
  */
 void maak_driehoek (char *charx0, char *chary0, char *charx1, char *chary1, char *charx2, char *chary2, int kleur)
 {
@@ -560,7 +655,7 @@ void maak_driehoek (char *charx0, char *chary0, char *charx1, char *chary1, char
 }
 
 /**
- * 		@brief \n Functie waarmee de lijnen van de driehoek worden getekend
+ * 		@brief \n Functie waarmee de lijnen van de driehoek worden getekend.
  */
 void maak_lijndriehoek(int x1, int y1, int x2, int y2, int dikte, int kleur)
 {
@@ -612,7 +707,7 @@ void maak_lijndriehoek(int x1, int y1, int x2, int y2, int dikte, int kleur)
 }
 
 /**
- * 		@brief \n Functie waarmee de tekst wordt getekend
+ * 		@brief \n Functie waarmee de tekst wordt getekend.
  */
 void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , int kleur, char *charstijl)
 {
@@ -652,6 +747,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_A[w][v]!=0){
 						UB_VGA_SetPixel(v+x, w+ y+10, bitmap_A[w][v]);
+						bitmap_A[w][v]=1;
 					}
 					break;
 				case 'b':
@@ -659,6 +755,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_B[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_B[w][v]);
+					bitmap_B[w][v]=1;
 					}
 					break;
 				case 'c':
@@ -666,6 +763,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_C[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_C[w][v]);
+					bitmap_C[w][v]=1;
 					}
 					break;
 				case 'd' :
@@ -673,6 +771,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_D[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_D[w][v]);
+					bitmap_D[w][v]=1;
 					}
 					break;
 				case 'e' :
@@ -680,6 +779,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_E[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_E[w][v]);
+					bitmap_E[w][v]=1;
 					}
 					break;
 				case 'f' :
@@ -687,6 +787,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_F[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_F[w][v]);
+					bitmap_F[w][v]=1;
 					}
 					break;
 				case 'g' :
@@ -694,6 +795,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_G[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_G[w][v]);
+					bitmap_G[w][v]=1;
 					}
 					break;
 				case 'h' :
@@ -701,6 +803,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_H[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_H[w][v]);
+					bitmap_H[w][v]=1;
 					}
 					break;
 				case 'i' :
@@ -708,6 +811,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_I[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_I[w][v]);
+					bitmap_I[w][v]=1;
 					}
 					break;
 				case 'j' :
@@ -715,19 +819,23 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_J[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_J[w][v]);
+					bitmap_J[w][v]=1;
 					}
 					break;
 				case 'k' :
 					if(bitmap_K[w][v]==1){ bitmap_K[w][v]= kleur;
 					}
 					if(bitmap_K[w][v]!=0){
-					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_K[w][v]);}
+					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_K[w][v]);
+					bitmap_K[w][v]=1;
+					}
 					break;
 				case 'l' :
 					if(bitmap_L[w][v]==1){ bitmap_L[w][v]= kleur;
 					}
 					if(bitmap_L[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_L[w][v]);
+					bitmap_L[w][v]=1;
 					}
 					break;
 				case 'm' :
@@ -735,6 +843,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_M[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_M[w][v]);
+					bitmap_M[w][v]=1;
 					}
 					break;
 				case 'n' :
@@ -742,6 +851,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_N[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_N[w][v]);
+					bitmap_N[w][v]=1;
 					}
 					break;
 				case 'o' :
@@ -749,6 +859,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_O[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_O[w][v]);
+					bitmap_O[w][v]=1;
 					}
 					break;
 				case 'p' :
@@ -756,6 +867,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_P[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_P[w][v]);
+					bitmap_P[w][v]=1;
 					}
 					break;
 				case 'q' :
@@ -763,6 +875,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_Q[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_Q[w][v]);
+					bitmap_Q[w][v]=1;
 					}
 					break;
 				case 'r' :
@@ -770,6 +883,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_R[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_R[w][v]);
+					bitmap_R[w][v]=1;
 					}
 					break;
 				case 's' :
@@ -777,6 +891,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_S[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_S[w][v]);
+					bitmap_S[w][v]=1;
 					}
 					break;
 				case 't' :
@@ -784,6 +899,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_T[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_T[w][v]);
+					bitmap_T[w][v]=1;
 					}
 					break;
 				case 'u' :
@@ -791,6 +907,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_U[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_U[w][v]);
+					bitmap_U[w][v]=1;
 					}
 					break;
 				case 'v' :
@@ -798,6 +915,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_V[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_V[w][v]);
+					bitmap_V[w][v]=1;
 					}
 					break;
 				case 'w' :
@@ -805,6 +923,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_W[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_W[w][v]);
+					bitmap_W[w][v]=1;
 					}
 					break;
 				case 'x' :
@@ -812,6 +931,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_X[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_X[w][v]);
+					bitmap_X[w][v]=1;
 					}
 					break;
 				case 'y' :
@@ -819,6 +939,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_Y[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_Y[w][v]);
+					bitmap_Y[w][v]=1;
 					}
 					break;
 				case 'z' :
@@ -826,6 +947,7 @@ void maak_tekst(char *charx, char *chary, char *chartekst, char *charfontnaam , 
 					}
 					if(bitmap_Z[w][v]!=0){
 					UB_VGA_SetPixel(v+x, w+ y+10, bitmap_Z[w][v]);
+					bitmap_Z[w][v]=1;
 					}
 					break;
 
@@ -846,98 +968,6 @@ void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 	int x_lo = atoi(charx_lo);
 	int y_lo = atoi(chary_lo);
 
-<<<<<<< HEAD
-=======
-/**
-*	\n Pijl naar rechts
-*/
-	int bitmap_1[10][10] = {
-				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF},
-				{0x03,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF,0x03,0xFF},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0x03,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF,0x03,0xFF},
-				{0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF}
-	};
-
-	/**
-	*	\n Pijl naar boven
-	*/
-	//pijl naar boven
-	int bitmap_2[10][10] = {
-				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
-				{0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03,0xFF},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0x03,0x03,0x03,0x03,0xFF,0xFF,0x03,0x03,0x03,0x03},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF}
-	};
-
-	//pijl naar links
-	int bitmap_3[10][10] = {
-				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0x03,0xFF,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF},
-				{0xFF,0x03,0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0x03},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0xFF,0x03,0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0x03},
-				{0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0x03,0xFF,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF}
-	};
-
-	// pijl naar beneden
-	int bitmap_4[10][10] = {
-				{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0x03,0x03,0x03,0x03,0xFF,0xFF,0x03,0x03,0x03,0x03},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03,0xFF},
-				{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0xFF}
-	};
-
-	//smiley blij
-	int bitmap_5[10][10] = {
-				{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
-				{0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03,0xFF},
-				{0x03,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0x03},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0x03,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0x03},
-				{0xFF,0x03,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0x03,0xFF},
-				{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF}
-	};
-
-	//smiley boos
-	int bitmap_6[10][10] = {
-				{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF},
-				{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
-				{0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03,0xFF},
-				{0x03,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0x03},
-				{0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03},
-				{0x03,0xFF,0xFF,0xFF,0x03,0x03,0xFF,0xFF,0xFF,0x03},
-				{0x03,0xFF,0xFF,0x03,0xFF,0xFF,0x03,0xFF,0xFF,0x03},
-				{0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0x03,0xFF},
-				{0xFF,0xFF,0x03,0xFF,0xFF,0xFF,0xFF,0x03,0xFF,0xFF},
-				{0xFF,0xFF,0xFF,0x03,0x03,0x03,0x03,0xFF,0xFF,0xFF}
-	};
-
->>>>>>> 788f69eeb5bf507bcd86fb21924fe7ee0ede9d87
 	int x,y;
 
 	for(y=0; y < 10; y++){
@@ -971,7 +1001,7 @@ void maak_bitmap (char *charnummer, char *charx_lo, char *chary_lo)
 }
 
 /**
- * 		@brief \n Functie waarmee het scherm schoon wordt gemaakt
+ * 		@brief \n Functie waarmee het scherm schoon wordt gemaakt.
  */
 void maak_clearscherm (int kleur)
 {
@@ -979,7 +1009,7 @@ void maak_clearscherm (int kleur)
 }
 
 /**
- * 		@brief \n Functie waarmee er wordt gewacht
+ * 		@brief \n Functie waarmee er wordt gewacht.
  */
 void wacht (char *charmsecs)
 {
@@ -999,6 +1029,7 @@ void wacht (char *charmsecs)
     while(msecs>0)		// Run x times 1 millisecond
     {
         for(i=0;i<D_mS;i++);
+
         msecs--;
     }
 }

@@ -11,6 +11,6 @@ var searchData=
   ['uart_5fputint',['UART_putint',['../uart_8c.html#ab68b2265165f1a355ff3dac4a726b37d',1,'UART_putint(unsigned int num):&#160;uart.c'],['../uart_8h.html#ab68b2265165f1a355ff3dac4a726b37d',1,'UART_putint(unsigned int num):&#160;uart.c']]],
   ['uart_5fputnum',['UART_putnum',['../uart_8c.html#a8fc12a2adee21e663b39d5d6501cfada',1,'UART_putnum(unsigned int num, unsigned char deel):&#160;uart.c'],['../uart_8h.html#a8fc12a2adee21e663b39d5d6501cfada',1,'UART_putnum(unsigned int num, unsigned char deel):&#160;uart.c']]],
   ['uart_5fputs',['UART_puts',['../uart_8c.html#a27087b9a5c82355d1201473c2a7dc644',1,'UART_puts(char *s):&#160;uart.c'],['../uart_8h.html#a27087b9a5c82355d1201473c2a7dc644',1,'UART_puts(char *s):&#160;uart.c']]],
-  ['uartlezen',['uartLezen',['../front___layer_8c.html#ac3a7b0fc0b17cc64c3f5081ea78834bb',1,'uartLezen(char *input):&#160;front_Layer.c'],['../front___layer_8h.html#ac3a7b0fc0b17cc64c3f5081ea78834bb',1,'uartLezen(char *input):&#160;front_Layer.c']]],
+  ['uartlezen',['uartLezen',['../front___layer_8c.html#ac6d42b26726e71ca28e5477eaa3d363e',1,'uartLezen():&#160;front_Layer.c'],['../front___layer_8h.html#ac6d42b26726e71ca28e5477eaa3d363e',1,'uartLezen():&#160;front_Layer.c']]],
   ['usart2_5firqhandler',['USART2_IRQHandler',['../uart_8c.html#a0ca6fd0e6f77921dd1123539857ba0a8',1,'uart.c']]]
 ];

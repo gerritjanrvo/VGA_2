@@ -1,3 +1,9 @@
+/*
+ * main.h
+ *
+ * Gemaakt door: Joost Kouijzer & Gerrit Jan Rijken van Olst
+ */
+
 #ifndef __MAIN_H
 #define __MAIN_H
 

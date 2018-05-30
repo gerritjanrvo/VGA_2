@@ -1,3 +1,9 @@
+/*
+ * logic_Layer.h
+ *
+ * Gemaakt door: Joost Kouijzer & Gerrit Jan Rijken van Olst
+ */
+
 #ifndef __LOGIC_LAYER_H
 #define __LOGIC_LAYER_H
 
